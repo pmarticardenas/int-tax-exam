@@ -314,11 +314,9 @@ def render_home(bank: list, progress: dict) -> None:
 <div class="hero">
   <h1>⚖️ International Taxation</h1>
   <p>156 questions · 5 years of past exams (2017–2025) · 13 topics<br>
-  Practice by topic with instant feedback and progress tracking.</p>
+  Practice by topic or simulate a full past exam year.</p>
 </div>
 """, unsafe_allow_html=True)
-
-    topics = sorted({q["topic"] for q in bank})
 
     # Global stats
     all_ids = {q["id"] for q in bank}
@@ -335,9 +333,8 @@ def render_home(bank: list, progress: dict) -> None:
     col4.metric("Bookmarked", n_book)
 
     st.markdown("---")
-    st.markdown('<div class="section-head">CHOOSE A TOPIC</div>', unsafe_allow_html=True)
-    st.markdown('<div class="section-sub">Select a topic to start practising. Progress is saved automatically.</div>', unsafe_allow_html=True)
 
+    # Resume active session
     session = load_session()
     if session:
         total = len(session["queue"])
@@ -351,47 +348,85 @@ Mode: <em>{session['mode']}</em>
 """, unsafe_allow_html=True)
         r1, r2 = st.columns(2)
         if r1.button("▶ Resume session", use_container_width=True):
-            st.session_state.active_topic = session["topic"]
-            st.session_state.active_mode = session["mode"]
             st.session_state.page = "quiz"
             st.rerun()
         if r2.button("✕ Discard session", use_container_width=True):
             clear_session()
             st.rerun()
 
-    # Topic cards
-    cols = st.columns(2)
-    for i, topic in enumerate(topics):
-        topic_qs = [q for q in bank if q["topic"] == topic]
-        ids = {q["id"] for q in topic_qs}
-        t_seen = [progress[qid] for qid in ids if qid in progress]
-        n_t_seen = len(t_seen)
-        n_t_ok = sum(1 for r in t_seen if r.get("last_result") == 1)
-        n_t_fail = sum(1 for r in t_seen if has_failure(r))
-        pct_ok = pct(n_t_ok, len(topic_qs))
+    tab_topics, tab_years = st.tabs(["📚 By topic", "📅 By year (exam simulation)"])
 
-        with cols[i % 2]:
-            with st.container(border=True):
-                st.markdown(f"**{topic}**")
-                st.markdown(
-                    f'<span class="badge cool">{len(topic_qs)} Qs</span>'
-                    f'<span class="badge ok">{n_t_ok} ✓</span>'
-                    f'<span class="badge fail">{n_t_fail} ✗</span>',
-                    unsafe_allow_html=True,
-                )
-                fill_pct = pct_ok
-                st.markdown(f"""
+    with tab_topics:
+        st.markdown('<div class="section-sub">Practise questions grouped by concept.</div>', unsafe_allow_html=True)
+        topics = sorted({q["topic"] for q in bank})
+        cols = st.columns(2)
+        for i, topic in enumerate(topics):
+            topic_qs = [q for q in bank if q["topic"] == topic]
+            ids = {q["id"] for q in topic_qs}
+            t_seen = [progress[qid] for qid in ids if qid in progress]
+            n_t_seen = len(t_seen)
+            n_t_ok = sum(1 for r in t_seen if r.get("last_result") == 1)
+            n_t_fail = sum(1 for r in t_seen if has_failure(r))
+            pct_ok = pct(n_t_ok, len(topic_qs))
+
+            with cols[i % 2]:
+                with st.container(border=True):
+                    st.markdown(f"**{topic}**")
+                    st.markdown(
+                        f'<span class="badge cool">{len(topic_qs)} Qs</span>'
+                        f'<span class="badge ok">{n_t_ok} ✓</span>'
+                        f'<span class="badge fail">{n_t_fail} ✗</span>',
+                        unsafe_allow_html=True,
+                    )
+                    st.markdown(f"""
 <div class="prog-bar-bg">
-  <div class="prog-bar-fill prog-ok" style="width:{fill_pct}%"></div>
+  <div class="prog-bar-fill prog-ok" style="width:{pct_ok}%"></div>
 </div>
 """, unsafe_allow_html=True)
-                b1, b2 = st.columns(2)
-                if b1.button("Practice", key=f"all_{i}", use_container_width=True):
-                    _start_session(bank, topic, "all")
-                if b2.button("Unseen only" if n_t_seen < len(topic_qs) else "Failed only",
-                             key=f"uns_{i}", use_container_width=True):
-                    mode = "unseen" if n_t_seen < len(topic_qs) else "failed"
-                    _start_session(bank, topic, mode)
+                    b1, b2 = st.columns(2)
+                    if b1.button("Practice", key=f"all_{i}", use_container_width=True):
+                        _start_session(bank, topic, "all")
+                    if b2.button("Unseen only" if n_t_seen < len(topic_qs) else "Failed only",
+                                 key=f"uns_{i}", use_container_width=True):
+                        mode = "unseen" if n_t_seen < len(topic_qs) else "failed"
+                        _start_session(bank, topic, mode)
+
+    with tab_years:
+        st.markdown('<div class="section-sub">Simulate a real past exam in order — questions as they appeared that year.</div>', unsafe_allow_html=True)
+        years = sorted({q["year"] for q in bank})
+        year_labels = {2017: "June 2017", 2018: "June 2018", 2019: "June 2019", 2024: "June 2024", 2025: "June 2025"}
+        year_qs_count = {2017: 30, 2018: 30, 2019: 30, 2024: 30, 2025: 36}
+
+        cols2 = st.columns(2)
+        for i, year in enumerate(years):
+            yr_qs = [q for q in bank if q["year"] == year]
+            yr_seen = [progress[q["id"]] for q in yr_qs if q["id"] in progress]
+            n_yr_ok = sum(1 for r in yr_seen if r.get("last_result") == 1)
+            n_yr_fail = sum(1 for r in yr_seen if has_failure(r))
+            n_yr_seen = len(yr_seen)
+            pct_yr = pct(n_yr_ok, len(yr_qs))
+
+            with cols2[i % 2]:
+                with st.container(border=True):
+                    st.markdown(f"**{year_labels.get(year, str(year))}**")
+                    st.markdown(
+                        f'<span class="badge cool">{len(yr_qs)} questions</span>'
+                        f'<span class="badge ok">{n_yr_ok} ✓</span>'
+                        f'<span class="badge fail">{n_yr_fail} ✗</span>',
+                        unsafe_allow_html=True,
+                    )
+                    st.markdown(f"""
+<div class="prog-bar-bg">
+  <div class="prog-bar-fill prog-ok" style="width:{pct_yr}%"></div>
+</div>
+""", unsafe_allow_html=True)
+                    ya, yb, yc = st.columns(3)
+                    if ya.button("Full exam", key=f"yr_all_{year}", use_container_width=True):
+                        _start_session_year(bank, year, "all")
+                    if yb.button("Shuffled", key=f"yr_shuf_{year}", use_container_width=True):
+                        _start_session_year(bank, year, "shuffle")
+                    if yc.button("Unseen", key=f"yr_uns_{year}", use_container_width=True):
+                        _start_session_year(bank, year, "unseen")
 
 
 def _start_session(bank: list, topic: str, mode: str) -> None:
@@ -415,8 +450,31 @@ def _start_session(bank: list, topic: str, mode: str) -> None:
     queue = [q["id"] for q in qs]
     started = utc_now()
     save_session(topic, mode, queue, 0, {}, started)
-    st.session_state.active_topic = topic
-    st.session_state.active_mode = mode
+    st.session_state.page = "quiz"
+    st.rerun()
+
+
+def _start_session_year(bank: list, year: int, mode: str) -> None:
+    progress = load_progress()
+    yr_qs = [q for q in bank if q["year"] == year]
+
+    if mode == "unseen":
+        qs = [q for q in yr_qs if q["id"] not in progress]
+    elif mode == "failed":
+        qs = [q for q in yr_qs if q["id"] in progress and has_failure(progress[q["id"]])]
+    elif mode == "shuffle":
+        qs = yr_qs[:]
+        random.shuffle(qs)
+    else:
+        qs = yr_qs  # original exam order
+
+    if not qs:
+        st.warning("No questions match that filter for this year.")
+        return
+
+    label = f"Exam {year}"
+    queue = [q["id"] for q in qs]
+    save_session(label, mode, queue, 0, {}, utc_now())
     st.session_state.page = "quiz"
     st.rerun()
 
@@ -785,6 +843,15 @@ def sidebar_nav(bank: list, progress: dict) -> None:
             _start_session(bank, sel, "all")
         if c2.button("Unseen", key="sb_uns", use_container_width=True):
             _start_session(bank, sel, "unseen")
+
+        st.markdown("**Quick start by year:**")
+        years = sorted({q["year"] for q in bank})
+        sel_yr = st.selectbox("Year", years, key="sidebar_year", label_visibility="collapsed")
+        y1, y2 = st.columns(2)
+        if y1.button("Full exam", key="sb_yr_all", use_container_width=True):
+            _start_session_year(bank, sel_yr, "all")
+        if y2.button("Shuffled", key="sb_yr_shuf", use_container_width=True):
+            _start_session_year(bank, sel_yr, "shuffle")
 
         st.markdown("---")
         bookmarked_ids = [qid for qid, r in progress.items() if r.get("bookmarked")]
