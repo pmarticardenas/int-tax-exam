@@ -176,31 +176,13 @@ def utc_now() -> str:
 # ── AUTH ─────────────────────────────────────────────────────────────────────
 
 def auth_configured() -> bool:
-    try:
-        return bool(st.secrets.get("auth", {}).get("client_id"))
-    except Exception:
-        return False
+    return False
 
-
-def get_user_id() -> str | None:
-    if not auth_configured():
-        return "guest"
-    if not getattr(st.user, "is_logged_in", False):
-        return None
-    return (st.user.to_dict().get("email") or "").strip().lower() or "guest"
-
+def get_user_id() -> str:
+    return "guest"
 
 def render_login_gate() -> None:
-    st.markdown("""
-<div class="hero">
-  <h1>⚖️ International Taxation</h1>
-  <p>Sign in with your Google account to access the quiz and save your progress.</p>
-</div>""", unsafe_allow_html=True)
-    with st.container(border=True):
-        st.markdown("### Sign in required")
-        st.write("Your progress is stored privately per account.")
-        st.button("Sign in with Google", on_click=st.login, use_container_width=True)
-    st.stop()
+    pass
 
 
 # ── DB ──────────────────────────────────────────────────────────────────────
@@ -919,9 +901,6 @@ def main() -> None:
     inject_css()
 
     uid = get_user_id()
-    if uid is None:
-        render_login_gate()
-        return
 
     if "page" not in st.session_state:
         st.session_state.page = "home"
@@ -933,12 +912,6 @@ def main() -> None:
 
     progress = load_progress(uid)
     sidebar_nav(bank, progress, uid)
-
-    if auth_configured():
-        with st.sidebar:
-            st.markdown("---")
-            st.caption(f"Signed in as {uid}")
-            st.button("Sign out", on_click=st.logout, use_container_width=True)
 
     page = st.session_state.page
     if page == "home":
