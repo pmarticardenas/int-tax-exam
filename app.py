@@ -173,25 +173,57 @@ def utc_now() -> str:
     return datetime.now(UTC).replace(microsecond=0).isoformat()
 
 
+# ── AUTH ─────────────────────────────────────────────────────────────────────
+
+def auth_configured() -> bool:
+    try:
+        return bool(st.secrets.get("auth", {}).get("client_id"))
+    except Exception:
+        return False
+
+
+def get_user_id() -> str | None:
+    if not auth_configured():
+        return "guest"
+    if not getattr(st.user, "is_logged_in", False):
+        return None
+    return (st.user.to_dict().get("email") or "").strip().lower() or "guest"
+
+
+def render_login_gate() -> None:
+    st.markdown("""
+<div class="hero">
+  <h1>⚖️ International Taxation</h1>
+  <p>Sign in with your Google account to access the quiz and save your progress.</p>
+</div>""", unsafe_allow_html=True)
+    with st.container(border=True):
+        st.markdown("### Sign in required")
+        st.write("Your progress is stored privately per account.")
+        st.button("Sign in with Google", on_click=st.login, use_container_width=True)
+    st.stop()
+
+
 # ── DB ──────────────────────────────────────────────────────────────────────
 
 def init_db() -> None:
     with sqlite3.connect(DB_PATH) as c:
         c.execute("""
             CREATE TABLE IF NOT EXISTS progress (
-                question_id TEXT PRIMARY KEY,
+                user_id TEXT NOT NULL,
+                question_id TEXT NOT NULL,
                 attempts INTEGER NOT NULL DEFAULT 0,
                 correct_count INTEGER NOT NULL DEFAULT 0,
                 incorrect_count INTEGER NOT NULL DEFAULT 0,
                 last_result INTEGER,
                 bookmarked INTEGER NOT NULL DEFAULT 0,
                 first_seen_at TEXT,
-                last_seen_at TEXT
+                last_seen_at TEXT,
+                PRIMARY KEY (user_id, question_id)
             )
         """)
         c.execute("""
             CREATE TABLE IF NOT EXISTS mcq_session (
-                id TEXT PRIMARY KEY DEFAULT 'singleton',
+                user_id TEXT PRIMARY KEY,
                 topic TEXT NOT NULL,
                 mode TEXT NOT NULL,
                 queue_json TEXT NOT NULL,
@@ -200,26 +232,31 @@ def init_db() -> None:
                 started_at TEXT NOT NULL
             )
         """)
+        # migrate old schema if needed
+        try:
+            c.execute("SELECT user_id FROM progress LIMIT 1")
+        except Exception:
+            c.execute("ALTER TABLE progress ADD COLUMN user_id TEXT NOT NULL DEFAULT 'guest'")
 
 
-def load_progress() -> dict[str, dict]:
+def load_progress(uid: str) -> dict[str, dict]:
     with sqlite3.connect(DB_PATH) as c:
         c.row_factory = sqlite3.Row
-        rows = c.execute("SELECT * FROM progress").fetchall()
+        rows = c.execute("SELECT * FROM progress WHERE user_id=?", (uid,)).fetchall()
     return {r["question_id"]: dict(r) for r in rows}
 
 
-def ensure_row(qid: str) -> None:
+def ensure_row(uid: str, qid: str) -> None:
     now = utc_now()
     with sqlite3.connect(DB_PATH) as c:
         c.execute("""
-            INSERT INTO progress (question_id, first_seen_at, last_seen_at)
-            VALUES (?,?,?) ON CONFLICT(question_id) DO NOTHING
-        """, (qid, now, now))
+            INSERT INTO progress (user_id, question_id, first_seen_at, last_seen_at)
+            VALUES (?,?,?,?) ON CONFLICT(user_id, question_id) DO NOTHING
+        """, (uid, qid, now, now))
 
 
-def record_attempt(qid: str, is_correct: bool) -> None:
-    ensure_row(qid)
+def record_attempt(uid: str, qid: str, is_correct: bool) -> None:
+    ensure_row(uid, qid)
     now = utc_now()
     with sqlite3.connect(DB_PATH) as c:
         c.execute("""
@@ -229,34 +266,34 @@ def record_attempt(qid: str, is_correct: bool) -> None:
                 incorrect_count = incorrect_count + ?,
                 last_result = ?,
                 last_seen_at = ?
-            WHERE question_id = ?
+            WHERE user_id=? AND question_id = ?
         """, (1 if is_correct else 0, 0 if is_correct else 1,
-              1 if is_correct else 0, now, qid))
+              1 if is_correct else 0, now, uid, qid))
 
 
-def toggle_bookmark(qid: str, val: bool) -> None:
-    ensure_row(qid)
+def toggle_bookmark(uid: str, qid: str, val: bool) -> None:
+    ensure_row(uid, qid)
     with sqlite3.connect(DB_PATH) as c:
-        c.execute("UPDATE progress SET bookmarked=?, last_seen_at=? WHERE question_id=?",
-                  (1 if val else 0, utc_now(), qid))
+        c.execute("UPDATE progress SET bookmarked=?, last_seen_at=? WHERE user_id=? AND question_id=?",
+                  (1 if val else 0, utc_now(), uid, qid))
 
 
-def save_session(topic: str, mode: str, queue: list, idx: int, answers: dict, started: str) -> None:
+def save_session(uid: str, topic: str, mode: str, queue: list, idx: int, answers: dict, started: str) -> None:
     with sqlite3.connect(DB_PATH) as c:
         c.execute("""
-            INSERT INTO mcq_session (id, topic, mode, queue_json, current_index, answers_json, started_at)
-            VALUES ('singleton',?,?,?,?,?,?)
-            ON CONFLICT(id) DO UPDATE SET
+            INSERT INTO mcq_session (user_id, topic, mode, queue_json, current_index, answers_json, started_at)
+            VALUES (?,?,?,?,?,?,?)
+            ON CONFLICT(user_id) DO UPDATE SET
                 topic=excluded.topic, mode=excluded.mode, queue_json=excluded.queue_json,
                 current_index=excluded.current_index, answers_json=excluded.answers_json,
                 started_at=excluded.started_at
-        """, (topic, mode, json.dumps(queue), idx, json.dumps(answers), started))
+        """, (uid, topic, mode, json.dumps(queue), idx, json.dumps(answers), started))
 
 
-def load_session() -> dict | None:
+def load_session(uid: str) -> dict | None:
     with sqlite3.connect(DB_PATH) as c:
         c.row_factory = sqlite3.Row
-        row = c.execute("SELECT * FROM mcq_session WHERE id='singleton'").fetchone()
+        row = c.execute("SELECT * FROM mcq_session WHERE user_id=?", (uid,)).fetchone()
     if not row:
         return None
     s = dict(row)
@@ -266,16 +303,16 @@ def load_session() -> dict | None:
     return s
 
 
-def clear_session() -> None:
+def clear_session(uid: str) -> None:
     with sqlite3.connect(DB_PATH) as c:
-        c.execute("DELETE FROM mcq_session WHERE id='singleton'")
+        c.execute("DELETE FROM mcq_session WHERE user_id=?", (uid,))
 
 
-def reset_topic_progress(bank: list, topic: str) -> None:
+def reset_topic_progress(uid: str, bank: list, topic: str) -> None:
     ids = [q["id"] for q in bank if q["topic"] == topic]
     if ids:
         with sqlite3.connect(DB_PATH) as c:
-            c.execute(f"DELETE FROM progress WHERE question_id IN ({','.join('?'*len(ids))})", ids)
+            c.execute(f"DELETE FROM progress WHERE user_id=? AND question_id IN ({','.join('?'*len(ids))})", [uid]+ids)
 
 
 # ── BANK ────────────────────────────────────────────────────────────────────
@@ -309,7 +346,7 @@ def has_failure(row: dict) -> bool:
 
 # ── TOPIC DASHBOARD ─────────────────────────────────────────────────────────
 
-def render_home(bank: list, progress: dict) -> None:
+def render_home(bank: list, progress: dict, uid: str) -> None:
     st.markdown("""
 <div class="hero">
   <h1>⚖️ International Taxation</h1>
@@ -335,7 +372,7 @@ def render_home(bank: list, progress: dict) -> None:
     st.markdown("---")
 
     # Resume active session
-    session = load_session()
+    session = load_session(uid)
     if session:
         total = len(session["queue"])
         done = len(session["answers"])
@@ -351,7 +388,7 @@ Mode: <em>{session['mode']}</em>
             st.session_state.page = "quiz"
             st.rerun()
         if r2.button("✕ Discard session", use_container_width=True):
-            clear_session()
+            clear_session(uid)
             st.rerun()
 
     tab_topics, tab_years = st.tabs(["📚 By topic", "📅 By year (exam simulation)"])
@@ -385,11 +422,11 @@ Mode: <em>{session['mode']}</em>
 """, unsafe_allow_html=True)
                     b1, b2 = st.columns(2)
                     if b1.button("Practice", key=f"all_{i}", use_container_width=True):
-                        _start_session(bank, topic, "all")
+                        _start_session(bank, topic, "all", uid)
                     if b2.button("Unseen only" if n_t_seen < len(topic_qs) else "Failed only",
                                  key=f"uns_{i}", use_container_width=True):
                         mode = "unseen" if n_t_seen < len(topic_qs) else "failed"
-                        _start_session(bank, topic, mode)
+                        _start_session(bank, topic, mode, uid)
 
     with tab_years:
         st.markdown('<div class="section-sub">Simulate a real past exam in order — questions as they appeared that year.</div>', unsafe_allow_html=True)
@@ -422,15 +459,15 @@ Mode: <em>{session['mode']}</em>
 """, unsafe_allow_html=True)
                     ya, yb, yc = st.columns(3)
                     if ya.button("Full exam", key=f"yr_all_{year}", use_container_width=True):
-                        _start_session_year(bank, year, "all")
+                        _start_session_year(bank, year, "all", uid)
                     if yb.button("Shuffled", key=f"yr_shuf_{year}", use_container_width=True):
-                        _start_session_year(bank, year, "shuffle")
+                        _start_session_year(bank, year, "shuffle", uid)
                     if yc.button("Unseen", key=f"yr_uns_{year}", use_container_width=True):
-                        _start_session_year(bank, year, "unseen")
+                        _start_session_year(bank, year, "unseen", uid)
 
 
-def _start_session(bank: list, topic: str, mode: str) -> None:
-    progress = load_progress()
+def _start_session(bank: list, topic: str, mode: str, uid: str = "guest") -> None:
+    progress = load_progress(uid)
     topic_qs = [q for q in bank if q["topic"] == topic]
 
     if mode == "unseen":
@@ -454,8 +491,8 @@ def _start_session(bank: list, topic: str, mode: str) -> None:
     st.rerun()
 
 
-def _start_session_year(bank: list, year: int, mode: str) -> None:
-    progress = load_progress()
+def _start_session_year(bank: list, year: int, mode: str, uid: str = "guest") -> None:
+    progress = load_progress(uid)
     yr_qs = [q for q in bank if q["year"] == year]
 
     if mode == "unseen":
@@ -474,16 +511,16 @@ def _start_session_year(bank: list, year: int, mode: str) -> None:
 
     label = f"Exam {year}"
     queue = [q["id"] for q in qs]
-    save_session(label, mode, queue, 0, {}, utc_now())
+    save_session(uid, label, mode, queue, 0, {}, utc_now())
     st.session_state.page = "quiz"
     st.rerun()
 
 
 # ── QUIZ ─────────────────────────────────────────────────────────────────────
 
-def render_quiz(bank: list) -> None:
+def render_quiz(bank: list, uid: str = "guest") -> None:
     bank_map = {q["id"]: q for q in bank}
-    session = load_session()
+    session = load_session(uid)
 
     if not session:
         st.warning("No active session. Return to the dashboard.")
@@ -498,7 +535,7 @@ def render_quiz(bank: list) -> None:
     total = len(queue)
 
     if idx >= total:
-        _render_session_summary(queue, answers, bank_map)
+        _render_session_summary(queue, answers, bank_map, uid)
         return
 
     qid = queue[idx]
@@ -507,7 +544,7 @@ def render_quiz(bank: list) -> None:
         st.error(f"Question {qid} not found.")
         return
 
-    progress = load_progress()
+    progress = load_progress(uid)
 
     # ── Header ──
     pct_done = pct(idx, total)
@@ -574,7 +611,7 @@ def render_quiz(bank: list) -> None:
         with bm_col:
             bm_label = "★ Bookmarked" if bookmarked else "☆ Bookmark"
             if st.button(bm_label, key=f"bm_{qid}", use_container_width=True):
-                toggle_bookmark(qid, not bookmarked)
+                toggle_bookmark(uid, qid, not bookmarked)
                 st.rerun()
 
         # Navigation
@@ -582,17 +619,17 @@ def render_quiz(bank: list) -> None:
             nav1, nav2 = st.columns(2)
             if nav1.button("← Previous", use_container_width=True, disabled=(idx == 0)):
                 session["current_index"] = max(0, idx - 1)
-                save_session(session["topic"], session["mode"], queue, session["current_index"], answers, session["started_at"])
+                save_session(uid, session["topic"], session["mode"], queue, session["current_index"], answers, session["started_at"])
                 st.rerun()
             if idx + 1 < total:
                 if nav2.button("Next →", use_container_width=True):
                     session["current_index"] = idx + 1
-                    save_session(session["topic"], session["mode"], queue, session["current_index"], answers, session["started_at"])
+                    save_session(uid, session["topic"], session["mode"], queue, session["current_index"], answers, session["started_at"])
                     st.rerun()
             else:
                 if nav2.button("Finish session ✓", use_container_width=True):
                     session["current_index"] = total
-                    save_session(session["topic"], session["mode"], queue, total, answers, session["started_at"])
+                    save_session(uid, session["topic"], session["mode"], queue, total, answers, session["started_at"])
                     st.rerun()
 
     else:
@@ -620,7 +657,7 @@ def render_quiz(bank: list) -> None:
             correct_letters = set(item.get("answer_letters", []))
             sel_set = set(selected_opts)
             is_correct = sel_set == correct_letters
-            record_attempt(qid, is_correct)
+            record_attempt(uid, qid, is_correct)
             answers[qid] = {"selected_letters": list(sel_set), "is_correct": is_correct}
             save_session(session["topic"], session["mode"], queue, idx, answers, session["started_at"])
             st.rerun()
@@ -634,14 +671,14 @@ def render_quiz(bank: list) -> None:
             st.markdown(f"Score so far: **{correct_in_session}/{len(answers)}** ({pct(correct_in_session, len(answers))}%)")
         if st.button("⏹ End session", use_container_width=True):
             session["current_index"] = total
-            save_session(session["topic"], session["mode"], queue, total, answers, session["started_at"])
+            save_session(uid, session["topic"], session["mode"], queue, total, answers, session["started_at"])
             st.rerun()
         if st.button("← Home", use_container_width=True):
             st.session_state.page = "home"
             st.rerun()
 
 
-def _render_session_summary(queue: list, answers: dict, bank_map: dict) -> None:
+def _render_session_summary(queue: list, answers: dict, bank_map: dict, uid: str = "guest") -> None:
     total = len(queue)
     correct = sum(1 for a in answers.values() if a.get("is_correct"))
     score_pct = pct(correct, total)
@@ -683,19 +720,19 @@ def _render_session_summary(queue: list, answers: dict, bank_map: dict) -> None:
 
     bc1, bc2 = st.columns(2)
     if bc1.button("← Back to dashboard", use_container_width=True):
-        clear_session()
+        clear_session(uid)
         st.session_state.page = "home"
         st.rerun()
     if bc2.button("Retry session", use_container_width=True):
-        session = load_session()
+        session = load_session(uid)
         if session:
-            save_session(session["topic"], session["mode"], session["queue"], 0, {}, utc_now())
+            save_session(uid, session["topic"], session["mode"], session["queue"], 0, {}, utc_now())
             st.rerun()
 
 
 # ── BROWSER ──────────────────────────────────────────────────────────────────
 
-def render_browser(bank: list, progress: dict) -> None:
+def render_browser(bank: list, progress: dict, uid: str) -> None:
     st.markdown('<div class="section-head">QUESTION BROWSER</div>', unsafe_allow_html=True)
     st.markdown('<div class="section-title">All Questions</div>', unsafe_allow_html=True)
 
@@ -756,7 +793,7 @@ def render_browser(bank: list, progress: dict) -> None:
 
 # ── STATS ────────────────────────────────────────────────────────────────────
 
-def render_stats(bank: list, progress: dict) -> None:
+def render_stats(bank: list, progress: dict, uid: str) -> None:
     st.markdown('<div class="section-head">STATISTICS</div>', unsafe_allow_html=True)
     st.markdown('<div class="section-title">Your Progress</div>', unsafe_allow_html=True)
 
@@ -820,7 +857,7 @@ def render_stats(bank: list, progress: dict) -> None:
 
 # ── SIDEBAR NAV ──────────────────────────────────────────────────────────────
 
-def sidebar_nav(bank: list, progress: dict) -> None:
+def sidebar_nav(bank: list, progress: dict, uid: str) -> None:
     with st.sidebar:
         st.markdown("## ⚖️ Intl. Taxation")
         st.markdown("---")
@@ -840,25 +877,25 @@ def sidebar_nav(bank: list, progress: dict) -> None:
         sel = st.selectbox("Topic", topics, key="sidebar_topic", label_visibility="collapsed")
         c1, c2 = st.columns(2)
         if c1.button("All", key="sb_all", use_container_width=True):
-            _start_session(bank, sel, "all")
+            _start_session(bank, sel, "all", uid)
         if c2.button("Unseen", key="sb_uns", use_container_width=True):
-            _start_session(bank, sel, "unseen")
+            _start_session(bank, sel, "unseen", uid)
 
         st.markdown("**Quick start by year:**")
         years = sorted({q["year"] for q in bank})
         sel_yr = st.selectbox("Year", years, key="sidebar_year", label_visibility="collapsed")
         y1, y2 = st.columns(2)
         if y1.button("Full exam", key="sb_yr_all", use_container_width=True):
-            _start_session_year(bank, sel_yr, "all")
+            _start_session_year(bank, sel_yr, "all", uid)
         if y2.button("Shuffled", key="sb_yr_shuf", use_container_width=True):
-            _start_session_year(bank, sel_yr, "shuffle")
+            _start_session_year(bank, sel_yr, "shuffle", uid)
 
         st.markdown("---")
         bookmarked_ids = [qid for qid, r in progress.items() if r.get("bookmarked")]
         if bookmarked_ids and st.button(f"★ Practice bookmarks ({len(bookmarked_ids)})", use_container_width=True):
             qs = [q for q in bank if q["id"] in bookmarked_ids]
             random.shuffle(qs)
-            save_session("Bookmarks", "bookmarked", [q["id"] for q in qs], 0, {}, utc_now())
+            save_session(uid, "Bookmarks", "bookmarked", [q["id"] for q in qs], 0, {}, utc_now())
             st.session_state.page = "quiz"
             st.rerun()
 
@@ -866,7 +903,7 @@ def sidebar_nav(bank: list, progress: dict) -> None:
         if failed_ids and st.button(f"✗ Retry all failures ({len(failed_ids)})", use_container_width=True):
             qs = [q for q in bank if q["id"] in failed_ids]
             random.shuffle(qs)
-            save_session("All failures", "failed", [q["id"] for q in qs], 0, {}, utc_now())
+            save_session(uid, "All failures", "failed", [q["id"] for q in qs], 0, {}, utc_now())
             st.session_state.page = "quiz"
             st.rerun()
 
@@ -881,28 +918,39 @@ def main() -> None:
     init_db()
     inject_css()
 
+    uid = get_user_id()
+    if uid is None:
+        render_login_gate()
+        return
+
     if "page" not in st.session_state:
         st.session_state.page = "home"
 
     bank = load_bank()
     if not bank:
-        st.error("question_bank.json not found. Place it in the same directory as app.py.")
+        st.error("question_bank.json not found.")
         return
 
-    progress = load_progress()
-    sidebar_nav(bank, progress)
+    progress = load_progress(uid)
+    sidebar_nav(bank, progress, uid)
+
+    if auth_configured():
+        with st.sidebar:
+            st.markdown("---")
+            st.caption(f"Signed in as {uid}")
+            st.button("Sign out", on_click=st.logout, use_container_width=True)
 
     page = st.session_state.page
     if page == "home":
-        render_home(bank, progress)
+        render_home(bank, progress, uid)
     elif page == "quiz":
-        render_quiz(bank)
+        render_quiz(bank, uid)
     elif page == "browser":
-        render_browser(bank, progress)
+        render_browser(bank, progress, uid)
     elif page == "stats":
-        render_stats(bank, progress)
+        render_stats(bank, progress, uid)
     else:
-        render_home(bank, progress)
+        render_home(bank, progress, uid)
 
 
 if __name__ == "__main__":
