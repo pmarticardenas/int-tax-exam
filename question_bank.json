@@ -11,7 +11,9 @@
       "Rules that are enforceable but cannot determine penalties in case of non-fulfillment",
       "Laws that are modified on a yearly basis and thus provide for a more flexible approach"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "OECD Guidelines qualify as 'soft law': they are neither strictly binding nor devoid of legal significance. Countries are not legally obligated to follow them, but they carry substantial weight in practice and in domestic courts."
   },
   {
@@ -26,7 +28,9 @@
       "Nationality given that it is an expression of tax sovereignty",
       "Tax residency, nationality and/or domicile depending on the countries"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Different countries use different connecting factors: some use tax residency, others use nationality (like the US), others use domicile. There is no single international standard — each country sets its own rules."
   },
   {
@@ -41,7 +45,9 @@
       "Taxation of the same income by two similar taxes in the same period on two different persons",
       "Taxation of the same income obtained in similar economic activities"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Economic double taxation occurs when the same income is taxed in the hands of two different persons (e.g. corporate profits taxed at the company level and again as dividends at the shareholder level — the underlying tax effect). Legal double taxation hits the same person twice."
   },
   {
@@ -56,7 +62,9 @@
       "Are recommended by the OECD to follow the Model Convention but they have no obligation to do so",
       "Must compulsorily follow some of the OECD Model provisions but can freely negotiate others"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The OECD Model is a recommendation, not a binding instrument. Countries are free to deviate from it, make reservations, or negotiate entirely different provisions. The OECD has no approval power over bilateral treaties."
   },
   {
@@ -71,7 +79,9 @@
       "Can be used as long as taxes are paid at least by one of the companies participating in the transaction",
       "Is not allowed as long as companies belonging to the European Union are involved"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Treaty shopping means interposing a company in a third country to access favorable DTC benefits to which the ultimate owner would not otherwise be entitled. The OECD combats this through the beneficial ownership concept and the PPT (Principal Purpose Test) under BEPS Action 6."
   },
   {
@@ -86,7 +96,9 @@
       "Conflicts of residency will be solved under Article 4 based upon nationality and visa permits",
       "Conflict of residency cannot be solved even when a Double Tax Convention applies"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Article 4 OECD Model: first, each country determines residency under its own domestic law. If both claim the person as resident (dual residency), the tie-breaker rules in Article 4(2)/(3) of the DTC apply to assign residency to one country only."
   },
   {
@@ -101,7 +113,9 @@
       "Would be deemed to exist if a company has a building site or installation project regardless the duration of the project",
       "When a company acts in another country through an independent agent acting in the ordinary course of its business"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Article 5(1) OECD Model: a PE is a fixed place of business through which the business of an enterprise is wholly or partly carried on. Options b (storage/display) and d (independent agent in ordinary course) are explicitly excluded from PE status. Building sites require a minimum duration (typically 12 months)."
   },
   {
@@ -116,7 +130,9 @@
       "The residence country must provide for an exemption to dividends subject to a limited taxation at the source country",
       "The source country may freely decide the applicable tax rate as long as it is lower than the limit imposed by the Tax Convention"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "The DTC sets a ceiling (maximum rate) on source country taxation of dividends. The source country may tax at that rate or any lower rate, including zero. The treaty does not impose a floor — full exemption at source is possible if domestic law allows it."
   },
   {
@@ -131,7 +147,9 @@
       "The taxpayer is granted a tax allowance at the source country through a reduction of the applicable tax rate",
       "The taxpayer cannot deduct the tax effectively paid at the source country but a lower one"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "A tax sparing clause allows the taxpayer to credit at the residence country a fictitious (or higher) tax — typically equal to the rate that would have applied had no source-country incentive been granted. This preserves the benefit of the source-country incentive for the investor."
   },
   {
@@ -146,7 +164,9 @@
       "The tax administrations should automatically assume that associated enterprises have manipulated their profits",
       "Associated enterprises must always determine prices in their common transactions through a benchmark analysis"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "The arm's length principle (Article 9 OECD Model) aims to ensure that transactions between related parties are priced as if they were between independent parties, achieving fiscal parity between MNE groups and stand-alone enterprises."
   },
   {
@@ -161,7 +181,9 @@
       "Is one of the Traditional Transaction Methods and as such is of preferential application",
       "Is one of the Transactional Profit Methods and implies a division of the profits obtained in a common transaction"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "The TNMM is one of the two Transactional Profit Methods (along with Profit Split). Its strength is that net profit indicators are less sensitive to functional differences than gross margins. It is valid under 2010 OECD Guidelines, though not the most preferred method."
   },
   {
@@ -176,7 +198,9 @@
       "Constitutes a new documentation requirement under transfer pricing regulations and provides for an overview of the MNE Group business",
       "Will be no longer required as it implies an important administrative workload for MNE Groups"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "The CbCR (BEPS Action 13) is part of the three-tier TP documentation (Master File, Local File, CbCR). It covers global allocation of income, profits, taxes paid, and certain indicators of economic activity per jurisdiction. Option c describes the Master File."
   },
   {
@@ -191,7 +215,9 @@
       "A place where goods can be stored without paying VAT but where custom duties have to be paid",
       "A place where goods can be stored on a temporary basis without paying Custom Duties nor VAT"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "A tax free zone (also called a bonded warehouse or free trade zone) suspends both Customs Duties and VAT while goods are stored there. Payment is triggered only when goods enter the domestic market for free circulation."
   },
   {
@@ -206,7 +232,9 @@
       "Will be solved if there is a Double Tax Convention signed between affected countries",
       "Can be avoided if the company's employees do not stay in the same country for more than 183 days within the natural year"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Dual residency for companies can sometimes be advantageous (access to two treaty networks) but may also cause complications. If a DTC exists, the tie-breaker rule (typically place of effective management) resolves the conflict. The 183-day rule applies to individuals, not companies."
   },
   {
@@ -221,7 +249,9 @@
       "Refer to arrangements exploiting the different treatment of an entity or an instrument under the laws of two or more jurisdictions aimed at achieving double non-taxation",
       "Refer to situations leading to double taxation and are therefore usually avoided by taxpayers"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Hybrid mismatches (BEPS Action 2) exploit differences in how jurisdictions classify entities or instruments — producing deduction/no-inclusion outcomes (a deduction in one country but no corresponding income inclusion in another), achieving double non-taxation."
   },
   {
@@ -236,7 +266,9 @@
       "Is the way used under direct taxation jointly with Personal Obligation to assure that all income generated in the country is subjected to taxation",
       "Is always levied under the tax residency principle"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "SO taxes non-residents on income sourced in the country. Together with PO (which taxes residents on worldwide income), these two principles ensure that all income with a nexus to the country is captured. PO is linked to residency; SO is not."
   },
   {
@@ -251,7 +283,9 @@
       "May exist by the simple fact of importing goods in second country and storing them there",
       "May be used to avoid the payment of the PO tax in the country where the PE is established"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "A PE generally requires a fixed place of business with some degree of permanence and through which the business of the enterprise is carried out. Simply importing and storing goods would typically fall under the excluded activities (preparatory/auxiliary), so option c is wrong."
   },
   {
@@ -266,7 +300,9 @@
       "Has created the 'treaty shopping clause' to avoid profit relocation using artificial intercompany prices",
       "Refers to situations leading to double taxation and are therefore usually avoided by taxpayers"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "BEPS (Base Erosion and Profit Shifting) aims to align taxation with the place where economic activity occurs and value is created, combating strategies that artificially shift profits to low-tax jurisdictions."
   },
   {
@@ -281,7 +317,9 @@
       "Is commonly set out from a range of values known as 'brother in arm's'",
       "Has to be set taking into account, among others, functions and risks of all related parts involved in the transaction"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "The arm's length price is determined by the functional analysis (functions performed, assets used, risks assumed) of each party to the transaction. The result is typically an arm's length range, not a single point."
   },
   {
@@ -296,7 +334,9 @@
       "There are many ways to classify them",
       "As subjected taxes or exempted taxes"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Taxes can be classified in many ways: direct/indirect, PO/SO, progressive/proportional/regressive, based on what they tax (income, consumption, wealth, transfer), etc. No single taxonomy is exhaustive."
   },
   {
@@ -311,7 +351,9 @@
       "May happen if the involved countries are levying direct taxes only on the source principle and not on the personal obligation",
       "Is a double taxation effect which appears when a company is storing goods in a tax free zone"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Dual residency can arise when two countries' domestic rules both claim the same person as resident. It can happen whether or not a DTC exists. If a DTC exists, the tie-breaker rules will resolve which country is the 'treaty residence' country."
   },
   {
@@ -326,7 +368,9 @@
       "Is a way of setting an indirect tax which is levied according to the Personal Obligation principle",
       "Is never charged when a EU company imports goods in its country"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "VAT is an indirect tax borne by the final consumer. It is collected fractionally at each stage of the supply chain (with businesses charging and deducting input/output VAT), so the tax authority receives it progressively but the ultimate burden falls on the final consumer."
   },
   {
@@ -341,7 +385,9 @@
       "The average tax rate of this taxpayer is 30%",
       "The tax liability of the taxpayer is 70,000"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Tax calculation: 0–50,000 × 10% = 5,000; 50,001–100,000 × 30% = 15,000; 100,001–200,000 × 50% = 50,000. Total = 70,000. Average rate = 70,000/200,000 = 35%. Marginal rate = 50%. So option d is correct (liability = 70,000), and option a (marginal = 35%) is wrong — 35% is the average, not the marginal."
   },
   {
@@ -356,7 +402,9 @@
       "Can only be found in a DTC but are never used on the internal laws of any country",
       "Are some measures created under the BEPS project to avoid profit relocation"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Relief methods (exemption, credit/deduction) are granted by the residence (PO) country. They do NOT give the same result — exemption ignores foreign income entirely while credit/deduction depends on rates. They can be found in both domestic law and DTCs."
   },
   {
@@ -371,7 +419,9 @@
       "Is relevant because in the case of dividends, the OECD recommends not to tax subsidiaries under PO to avoid the double taxation effect",
       "Can be freely decided by each country as there are no definitions of income in the OECD DTC model"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Classification of income matters enormously in DTCs — the same payment might be treated as royalty in one country but as a service fee or dividend in another, leading to mismatches (double taxation or double non-taxation). This is a hybrid mismatch."
   },
   {
@@ -386,7 +436,9 @@
       "Residents have to pay taxes where they are living",
       "It's used by non-residents to redistribute wealth on a worldwide basis"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "SO is justified by the benefit principle: the country that provides infrastructure, legal system, and markets enabling income generation has a legitimate claim to tax that income, regardless of where the earner resides."
   },
   {
@@ -401,7 +453,9 @@
       "The way to levy this kind of taxes would never be a flat rate system but a progressive tax rate system",
       "This taxation is based on the personal aspects not on the transaction"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "The two systems are: (1) the chain/cascade VAT system where tax is charged and recovered at each stage (burden on final consumer) and (2) non-deductible indirect taxes (e.g. customs duties, excise duties) which are a final cost for the business and flow into pricing."
   },
   {
@@ -416,7 +470,9 @@
       "13,200",
       "11,000"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Exemption with progressivity: foreign income (10,000) is exempt at PO but is used to calculate the applicable rate. Global income = 50,000. Tax on 50,000: 10,000 × 20% + 40,000 × 30% = 2,000 + 12,000 = 14,000. Average rate = 14,000/50,000 = 28%. Apply 28% to local income only: 40,000 × 28% = 11,200. Plus SO tax already paid: 10,000 × 10% = 1,000. Global liability: 11,200 + 1,000? Or just PO = 11,200? The question asks for global liability = 11,200 + 1,000 = 12,200. However per standard exam logic, answer is 11,200 (PO tax on local income only at blended rate)."
   },
   {
@@ -431,7 +487,9 @@
       "There are no VAT exemptions, all transactions are subjected and not exempted from VAT",
       "Input VAT is fully recoverable even though no output VAT is charged"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Exports are a 'zero-rated' supply (exempt with the right to deduct input VAT). The exporting company charges 0% VAT on sales but retains the full right to recover input VAT paid on purchases — this avoids the VAT being a cost embedded in the export price."
   },
   {
@@ -446,7 +504,9 @@
       "Are a good example of indirect taxes levied on a progressive basis",
       "Are not recommended by the OECD"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Personal Income Tax typically applies full (worldwide) PO to tax residents and limited SO to non-residents (taxing only income sourced in that country). Both obligations can coexist — they apply to different taxpayer groups."
   },
   {
@@ -461,7 +521,9 @@
       "Taxation of the same income by two similar taxes in the same period on two different persons",
       "Taxation of the same income affecting exclusively to legal entities"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Legal double taxation: same taxable event + same period + same (or similar) tax + same person. This contrasts with economic double taxation where two different persons are taxed on the same underlying income."
   },
   {
@@ -476,7 +538,9 @@
       "Tax paid by a company in a low tax jurisdiction",
       "Withholding tax paid at the source country on a dividend distribution"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "The underlying tax is the corporate income tax already paid by the subsidiary on the profits from which dividends are distributed. It creates economic double taxation (first at corporate level, then at shareholder level on the same profit). The Parent-Subsidiary Directive and tax credit methods address this."
   },
   {
@@ -491,7 +555,9 @@
       "Will always appear when an individual is a national of two countries",
       "May lead to double taxation but can be solved when a Double Tax Convention is applicable"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Dual residency can happen to both individuals and companies. It does not necessarily arise from dual nationality. DTCs provide tie-breaker rules to assign exclusive treaty residence, solving the double taxation. Without a DTC, the person may suffer double PO taxation."
   },
   {
@@ -506,7 +572,9 @@
       "The elimination of double taxation as well as the prevention of tax avoidance and evasion",
       "The development of a common tax system which will apply to the citizens of the two countries involved"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Modern DTCs serve a dual purpose per the OECD Model preamble: (1) eliminating double taxation and (2) preventing tax avoidance and evasion (the latter reinforced by BEPS). They do not create customs unions or harmonize domestic tax systems."
   },
   {
@@ -521,7 +589,9 @@
       "Tax to be paid at source will be the average between 15% and 12%, that is 13.5%",
       "Tax to be paid at source will be calculated by applying 15% but deducting 12%"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "The DTC sets a ceiling (15%) — it is a maximum limit. If domestic law is more favourable (12%), the taxpayer benefits from the lower domestic rate. DTCs cannot impose a higher tax than domestic law; they can only reduce or cap the source country's tax claim."
   },
   {
@@ -536,7 +606,9 @@
       "Business profits may be taxed by both countries depending on the circumstances",
       "Business profits may be taxed by both countries only when developing activities of an auxiliary and preparatory nature at the source country"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Article 7: business profits are taxed exclusively at the residence country UNLESS the enterprise has a PE in the source country. If a PE exists, the source country may tax the profits attributable to that PE. So both countries may tax, depending on whether a PE exists."
   },
   {
@@ -551,7 +623,9 @@
       "The price applied in transactions carried out between two multinational groups",
       "The price applied by independent parties in comparable transactions"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "The Comparable Uncontrolled Price (CUP) method compares the price charged in a controlled transaction with the price charged in a comparable uncontrolled transaction between independent parties — the most direct and preferred method when applicable."
   },
   {
@@ -566,7 +640,9 @@
       "Cannot be discussed by the tax authorities as companies may freely determine the prices to be applied",
       "May be adjusted by the tax authorities up to 17.5%, this being the average between 10% and 25%"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "The key is comparability. If the transactions are truly comparable (same functions, risks, products, conditions), the 10% margin might be challenged. If not sufficiently comparable, no adjustment is warranted. There is no automatic halfway adjustment — the result falls in the arm's length range."
   },
   {
@@ -581,7 +657,9 @@
       "Is so complicated that only groups having a turnover higher than 10,000,000 euros are obliged to do it",
       "Is one of the factors determining comparability and focuses on the contractual clauses, functions and business strategies"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "The functional analysis (FAR analysis — Functions, Assets, Risks) is a core component of any TP analysis that determines which party bears risks, uses assets, and performs functions — thus who should earn which returns. It is mandatory for all intragroup transactions, not just when challenged."
   },
   {
@@ -596,7 +674,9 @@
       "Considering domestic rules of the country in which the person has the habitual abode",
       "Considering domestic rules of the two countries involved as provided for by Article 4 of the Double Tax Convention Model"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Article 4 OECD Model: first each country applies its own domestic rules to establish residency. If both claim the person, the tie-breakers (permanent home, centre of vital interests, habitual abode, nationality, mutual agreement) in Article 4(2) apply. So domestic rules come first — both are relevant."
   },
   {
@@ -611,7 +691,9 @@
       "Not acceptable under current international tax standards and therefore the OECD has enacted several laws to neutralize them",
       "Offering interesting tax planning opportunities and consequently countries should provide for a favorable tax regime"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "BEPS Action 2 calls for coordinated domestic and treaty-level rules to neutralize hybrid mismatches. The OECD cannot enact laws (it issues soft law), but recommends coordinated changes. Unilateral action is insufficient — coordination is the key."
   },
   {
@@ -626,7 +708,9 @@
       "Are based on an automatic (systematic and periodical) transmission of bulk tax information among countries",
       "Imply sending other countries information about taxpayers spontaneously when a country comes across relevant data"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The current standard (developed under BEPS Action 5 and the Common Reporting Standard) is automatic exchange of information (AEOI): systematic, periodic, bulk transmission of financial account and tax information between tax authorities without any specific request."
   },
   {
@@ -641,7 +725,9 @@
       "Provides for shared taxation between the owner's residence country and the country where the property is located",
       "Provides for exclusive taxation at the owner's residence country"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Article 6 grants the source country (where the property is located) the right to tax immovable property income. But the residence country also retains taxing rights under PO. Both countries may tax — it is shared taxation (with relief methods applied at the residence country). Capital gains on immovable property fall under Article 13."
   },
   {
@@ -656,7 +742,9 @@
       "Is specifically applied on exports and imports as well as custom duties",
       "The tax is borne by the final consumer and, even though it does not represent a charge to the business, it is fractionally collected in each business transaction"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "VAT is an indirect tax borne by the final consumer. Businesses collect and remit VAT fractionally at each transaction stage, but they recover input VAT — so it is not a net cost for them. VAT is not levied on exports (zero-rated) and is separate from customs duties."
   },
   {
@@ -671,7 +759,9 @@
       "Constitutes a new documentation requirement under transfer pricing regulations and provides for an overview of the MNE Group business",
       "Will be no longer required and be substituted by automatic exchange of information"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Under BEPS Action 13, the three-tier TP documentation structure is: Master File (group overview), Local File (entity-specific analysis), and Country by Country Report (jurisdiction-by-jurisdiction financial data). Option c describes the Master File."
   },
   {
@@ -686,7 +776,9 @@
       "Are exactly the same way of levying taxes over income",
       "Are only used on income taxation but not on wealth or inheritance taxes among others"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Both PO and SO are valid and commonly used mechanisms. From a single country's perspective, using both ensures full coverage (residents on worldwide income + non-residents on local-source income). The combination across multiple countries is what generates international double taxation."
   },
   {
@@ -701,7 +793,9 @@
       "In fact, it is completely impossible to avoid or reduce the double taxation effect",
       "Allowing the taxpayer to take into account income taxed abroad when filing its Personal Income tax return at the residence country"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "The main relief methods (exemption method, credit/deduction method) both work at the residence (PO) country by reference to foreign-taxed income. Whether by exempting it (exemption) or crediting foreign taxes paid (credit), the mechanism is relief at the residence country."
   },
   {
@@ -716,7 +810,9 @@
       "Due to many reasons such as tax risks that may arise, for instance, due to transfer pricing regulations",
       "Not a relevant point as customs duties can be refunded by companies importing goods"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "International taxation creates genuine business risks: PE risk in new markets, transfer pricing disputes, withholding taxes on cross-border payments, classification mismatches, and compliance burdens. DTCs mitigate but do not eliminate these risks."
   },
   {
@@ -731,7 +827,9 @@
       "An entity has fixed and permanent premises in another country where it's doing auxiliary activities",
       "An entity sends to Spain 10 employees that will be working on the Sagrada Familia building site until finished"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "A construction/building site PE exists when it lasts more than 12 months (OECD Model). The Sagrada Familia has been under construction since 1882, so this clearly qualifies. A subsidiary is a separate legal entity, not a PE. Storage and auxiliary activities are typically excluded."
   },
   {
@@ -746,7 +844,9 @@
       "Will have to charge indirect tax (such as VAT) from the origin country when selling to other businesses",
       "The entity could not be competitive compared to country's competitors if customs duties are not taken into account"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "A bank account in another country does not constitute a PE — it lacks the required fixed place of business character. Sales to business customers (B2B) in another EU country would typically follow the destination principle for VAT: the seller may need to charge VAT in the buyer's country or apply reverse charge."
   },
   {
@@ -761,7 +861,9 @@
       "Is only possible if we create a subsidiary there but not in the case of a permanent establishment",
       "Is only possible if the other affected countries issue a special authorization to the involved entities"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Using a tax haven is not per se illegal. If the entity has genuine economic substance, performs real functions, and transactions are priced at arm's length, it can be legitimate. The BEPS anti-avoidance rules target artificial structures lacking substance."
   },
   {
@@ -776,7 +878,9 @@
       "A way to allocate profits in low tax jurisdictions under the Fortnite Act",
       "Has no effects if transactions are done in the same country"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "If two different tax authorities independently adjust the same intercompany price and reach different results, or if one country increases income without a corresponding decrease in the other, economic double taxation arises. APAs and MAPs try to prevent this."
   },
   {
@@ -791,7 +895,9 @@
       "Lead to a double taxation issue as Personal and Source Obligation can be levied over the same income in two different countries at the same time",
       "Has nothing to see with taxation and no effects on the tax liability of the taxpayer"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "If a person has spouses in different countries, each country may claim the person as a tax resident based on the 'permanent home' or 'centre of vital interests' tie-breaker criteria — potentially causing dual residency and double PO taxation. This is a real (if colourful) edge case."
   },
   {
@@ -806,7 +912,9 @@
       "Reduces the tax liability on the Source Obligation and increases the Personal Obligation liability",
       "Reduces the tax liability on the Personal Obligation and has no effects on the Source Obligation"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "A tax sparing clause works at the residence (PO) country: it allows a credit for tax that was notionally due (but was actually exempted or reduced by the source country as an incentive). This reduces the PO tax burden. It does not change the actual SO tax collected (which is zero or reduced)."
   },
   {
@@ -821,7 +929,9 @@
       "We can say the marginal tax rate applied by the residence country is 30%",
       "The average tax rate over its global income is 28.75%"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Global income = 40,000 (domestic). Foreign 10,000 is exempt. The rate applied to domestic income is the rate on total 40,000 income = 35% average (given). PO tax = 40,000 × 35% = 14,000. SO tax = 10,000 × 10% = 1,000. Total = 15,000 paid globally. Average rate = 15,000/52,000 = ... Actually: answer d states 28.75% average over global income. With PO 14,000 + SO 1,000 = 15,000; 15,000/40,000+10,000? Checking: the stated average is 35% on 40,000 = 14,000. But the question says the average rate for residence country is 35%. The global tax is 14,000 + 1,000 = 15,000 over 50,000 global = 30%. The intended answer per exam is d."
   },
   {
@@ -836,7 +946,9 @@
       "Can affect the member states' internal tax laws and/or Double Taxation Conventions set by member states regarding direct and indirect taxation",
       "Apply to Custom duties, Externality taxes and in some aspects regarding VAT"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "EU Directives bind member states and must be transposed into domestic law. They cover both direct tax (Parent-Subsidiary Directive, Interest & Royalties Directive, ATAD) and indirect tax (VAT Directive). They can also affect the compatibility of DTCs between member states."
   },
   {
@@ -851,7 +963,9 @@
       "No double taxation measures would be applied following the OECD recommendations",
       "If the entity has created a permanent and fixed business place to manage those rents, then income would be taxed according to the personal obligation principle in country B"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Immovable property income is taxed in the country where the property is located (source, country B) per Article 6 OECD Model. Country A also taxes it under PO. Country A should provide relief (exemption or credit). Without a DTC, domestic rules apply — typically SO tax at source at whatever rate country B sets domestically."
   },
   {
@@ -866,7 +980,9 @@
       "The marginal tax rate is 30%",
       "Earning 1,000 additional euros means that the average tax rate will be increased by 30%"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Tax = 20,000 × 10% + 30,000 × 20% + 50,000 × 30% = 2,000 + 6,000 + 15,000 = 23,000. Average rate = 23,000/100,000 = 23%. Marginal rate = 30% (the rate on the last euro of income, in the highest bracket). Option c is correct."
   },
   {
@@ -881,7 +997,9 @@
       "Will have the right to recover the input VAT if a DTC exists",
       "Would be able to deduct the input VAT over the tax liability of its Corporate Income Tax"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Intra-EU sales to business customers (B2B) are generally zero-rated or exempt with the right to deduct in the seller's country. The right to recover input VAT is linked to making taxable supplies (including intra-EU supplies), not to charging output VAT domestically."
   },
   {
@@ -896,7 +1014,9 @@
       "Will pay tax as a nonresident company in the country where the parent company is resident",
       "Will be fully taxed in the country where it is located"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "A PE is taxed in the country where it is located on its attributable profits (SO). A PE does not have separate legal personality (that's a subsidiary). PEs do not distribute dividends — they are part of the same legal entity. Profit repatriation from a PE is not a dividend payment."
   },
   {
@@ -911,7 +1031,9 @@
       "Shameful effect",
       "Transfer pricing issue"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "When the same person is taxed on the same income in two different countries (e.g., dual residency, or PO at residence + SO at source), this is legal double taxation. Economic double taxation involves two different persons."
   },
   {
@@ -926,7 +1048,9 @@
       "The underlying tax effect",
       "Taxation will have no effect on the final income maximization on the parent company"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The underlying tax effect means that corporate profits are already taxed at the subsidiary level before being distributed as dividends. A full analysis requires knowing: (1) subsidiary corporate tax, (2) withholding tax on dividend distribution, and (3) tax at parent level. The Parent-Subsidiary Directive and participation exemptions address this."
   },
   {
@@ -941,7 +1065,9 @@
       "The OECD will solve the issue according to the DTC model",
       "May suffer from a double PO Taxation issue"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Without a DTC, there is no mechanism to resolve dual residency. Both countries will apply full PO taxation on worldwide income, creating genuine legal double taxation. The OECD cannot intervene directly in bilateral disputes without a treaty."
   },
   {
@@ -956,7 +1082,9 @@
       "The marginal tax rate in residence country is 20%",
       "Average tax rate in residence country is 20%"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Residency country taxes on 75,000 (no exemption, no measures): 40,000 × 10% + 35,000 × 25% = 4,000 + 8,750 = 12,750. Average rate in residence = 12,750/75,000 ≈ 17%. But the question asks about residency income only (50,000): 40,000 × 10% + 10,000 × 25% = 4,000 + 2,500 = 6,500. Wait — no measures, so taxed on global 75,000: 40K×10% + 20K×25% = 4,000+5,000 = 9,000. Average = 9,000/75,000 = 12%. Check option d: 20% average on residency country. 50,000 only: 40K×10%+10K×25% = 6,500. 6,500/50,000 = 13%. The intended correct answer per exam marking is d."
   },
   {
@@ -971,7 +1099,9 @@
       "Are entered by two or more countries and therefore we distinguish between bilateral and multilateral DTCs",
       "Should pursue the elimination of double taxation but also the prevention of double non-taxation situations"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "The OECD Model preamble (2017 update post-BEPS) explicitly states that DTCs should prevent both double taxation AND double non-taxation/tax avoidance. DTCs are almost always bilateral; multilateral ones are exceptional (e.g. the MLI modifies existing treaties). They do not create customs unions."
   },
   {
@@ -986,7 +1116,9 @@
       "Real estate income can only be taxed at the residence country following the OECD DTC model",
       "Both countries will submit their proposal to tax real estate income to the OECD that will accept it or not"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Article 6 grants taxing rights to both source and residence countries. This means potential double taxation — which is then mitigated by relief methods at the residence country. The OECD has no veto power over treaty negotiations."
   },
   {
@@ -1001,7 +1133,9 @@
       "Business profits may be taxed by both countries depending on the circumstances",
       "Business profits may be taxed by both countries only when developing activities of an auxiliary and preparatory nature"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Article 7: residence country has primary taxing rights on business profits UNLESS a PE exists in the source country — in which case the source country may tax PE-attributable profits. The presence/absence of a PE is the key determinant."
   },
   {
@@ -1016,7 +1150,9 @@
       "Will never be applicable when selling goods and it's only applicable in the case of financial operations",
       "Cost Plus method deducts from the sale price the margin applied by comparable entities in market conditions"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "The Cost Plus method is appropriate when goods are not easily comparable to third-party sales (otherwise CUP would be preferred). It works by adding an appropriate markup to the supplier's costs — useful for manufacturing or service entities where the function (not the product) is the comparable. Option a describes a CUP situation."
   },
   {
@@ -1031,7 +1167,9 @@
       "Breaks the progressivity principle as due to the exemption, the rest of income will be taxed at lower average tax rate",
       "Is a good option if the tax system wants to grant DT relief but keep taxing income taking into account global income thus raising the average tax rate"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Exemption with progressivity exempts foreign income from domestic tax but includes it when calculating the rate applicable to domestic income. This preserves the progressive rate structure (the average rate is higher than pure exemption) while not actually taxing the foreign income — a balanced approach."
   },
   {
@@ -1046,7 +1184,9 @@
       "Try to limit indebtment that could not be set in normal market conditions between independent parties",
       "Is a fully valid tax planning alternative and is a way to avoid the underlying tax effect"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Thin capitalization rules (BEPS Action 4) target the use of excessive intragroup debt to generate deductible interest payments that economically function like dividend distributions — shifting profits to low-tax jurisdictions. Even arm's length rates don't justify artificially inflated debt levels."
   },
   {
@@ -1061,7 +1201,9 @@
       "Has been developed by the OECD upon the request of the G20 countries and therefore does not involve developing countries",
       "Has made possible the use of hybrids both at domestic and DTC level"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "BEPS was developed by the OECD/G20 (not the EU or US alone) and explicitly aims to combat tax avoidance strategies exploiting gaps and mismatches in international rules. Developing countries are involved via the Inclusive Framework. BEPS targets, not enables, hybrid mismatches."
   },
   {
@@ -1076,7 +1218,9 @@
       "The Country by Country Report",
       "Tax havens as a way to elude taxation"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "The Local File contains entity-specific information: detailed functional and risk analysis for each controlled transaction, comparability analysis, method selection rationale, and benchmarking results. The Master File covers group-level information."
   },
   {
@@ -1091,7 +1235,9 @@
       "To set common rules on a worldwide basis in order to determine where services are rendered for direct and indirect taxation purposes",
       "To create customs duties levied over such operations, such as Netflix, Google Ads, etc."
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Digital economy taxation challenges exist for both direct tax (where is the profit generated? Pillar 1/2) and indirect tax (where is VAT/GST due on digital services?). Both dimensions require international coordination. Customs duties don't apply to digital services."
   },
   {
@@ -1106,7 +1252,9 @@
       "As residence country has a lower tax rate compared to source, residence country is granting a subsidy to the taxpayer",
       "This situation may never occur as limited deduction is not a recommended way to reduce double taxation"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Under limited deduction, the taxpayer can only deduct the lower of: foreign tax paid or the local tax on that income. Here PO rate (15%) < SO rate (20%), so only 15% can be deducted. The global rate = 20% (SO) + 15% × (1 - 15%) ≈ 27.75%? Actually with limited deduction the foreign tax credit is capped at the residence rate. Net effect: global burden approaches 20% if the method functions correctly, but the PO residual = max 0. The intended answer per exam is b."
   },
   {
@@ -1121,7 +1269,9 @@
       "Imports, exports, intra-EU operations and hybrids",
       "Trade, Services and Financial"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "The OECD TP Guidelines classify intragroup transactions into four main categories: (1) Trade/goods, (2) Services, (3) Intangibles (IP), and (4) Financial transactions. Each category has specific guidance on method selection and comparability."
   },
   {
@@ -1136,7 +1286,9 @@
       "Is a way to express the limitation of benefits to the real beneficial owner, found in the OECD DTC Model",
       "Implies that anyone is free to choose the best country to set up a letterbox company and benefit from the DTCs signed by that country"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Treaty shopping is combated primarily through the beneficial ownership concept (Articles 10, 11, 12) and the Principal Purpose Test/Limitation on Benefits (Article 29, BEPS Action 6). It is not defined in a standalone article but permeates multiple DTC provisions."
   },
   {
@@ -1151,7 +1303,9 @@
       "When importing, customs duties and VAT will be borne, but customs duties will have no effects on purchase cost as they could be recovered",
       "When importing, customs duties and VAT will be borne, and both will increase the cost of purchase for the buyer"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Import VAT can be recovered as input VAT by a VAT-registered business — so it is not a cost. Customs duties, however, cannot be recovered — they are a permanent cost that increases the purchase price. Therefore, only VAT is neutral; customs duties are a real cost."
   },
   {
@@ -1166,7 +1320,9 @@
       "EU Countries have set it up in order to avoid discrimination regarding the single country approach and the underlying tax effect",
       "Grants a full tax exemption for the parent and the subsidiary company in terms of PO and SO"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The Parent-Subsidiary Directive (2011/96/EU) eliminates withholding tax on dividend distributions from subsidiary to parent (in qualifying holdings) and requires the parent's country to either exempt dividends or provide a credit for the underlying tax. This prevents economic double taxation on cross-border profit distributions within the EU."
   },
   {
@@ -1181,7 +1337,9 @@
       "Exclusively on tax residency as provided by international tax rules and DTCs",
       "Nationality because this is the higher expression of tax sovereignty"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Countries use different connecting factors: most use tax residency; the US also uses nationality; some civil law countries use domicile. There is no single standard — domestic law determines each country's approach."
   },
   {
@@ -1196,7 +1354,9 @@
       "Covers national and international transactions as well as custom duties",
       "The tax is borne by the final consumer and, even though it does not represent a charge to the business, it is fractionally collected in each business transaction"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "VAT is an indirect tax (not direct), borne by the final consumer, collected fractionally through the supply chain (businesses net off input/output VAT). It does not include customs duties. EU harmonization limits (but does not eliminate) national freedom on VAT rules."
   },
   {
@@ -1211,7 +1371,9 @@
       "Will be fully entitled to recover input VAT",
       "Will only be able to recover VAT if its turnover on domestic transactions is higher than international operations"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The right to recover input VAT applies when outputs are taxable supplies (domestic sales at standard rate), zero-rated exports, or intra-EU supplies. All three categories grant full input VAT recovery — the company is fully entitled to recover all input VAT."
   },
   {
@@ -1226,7 +1388,9 @@
       "Constitutes documentation helping tax authorities determine where activity is held by multinational groups and where profits are allocated",
       "Will be no longer required and be substituted by automatic exchange of information"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The CbCR is a tool for tax authorities to assess high-level TP and BEPS risks by seeing where a multinational group books revenue, profit, employees, and taxes paid across jurisdictions. It is filed with the parent company's tax authority and shared via automatic exchange (BEPS Action 13)."
   },
   {
@@ -1241,7 +1405,9 @@
       "Tax free zones allow the suspension of VAT payment but not of Custom Duties",
       "If goods are stored in a tax free zone, Custom Duties and VAT can be fully avoided permanently as tax free zones qualify as tax havens"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Tax free zones (bonded warehouses) allow goods to be stored without triggering customs duties or VAT. Both are suspended (not eliminated) — they become payable when goods enter free circulation in the EU. This is useful for re-exporting goods or for deferring duties/VAT payment."
   },
   {
@@ -1256,7 +1422,9 @@
       "Are enforceable provisions for the taxpayers and they can even determine penalties in case of non-fulfillment",
       "Should not be given any value as they do not have any legal significance"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "OECD Guidelines are 'soft law': they lack direct legal binding force but are widely adopted by courts, tax authorities, and legislators as authoritative guidance. They are neither fully binding (no treaty force) nor irrelevant (widely cited in domestic courts and international arbitration)."
   },
   {
@@ -1271,7 +1439,9 @@
       "The lender will be only taxable at the residence country according to the OECD Model provisions",
       "There is no provision concerning interest under DTCs and countries are free to apply domestic law"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Article 11 OECD Model allows both source and residence countries to tax interest (unlike royalties in the OECD Model which are taxed only at residence). The DTC sets a maximum source rate and provides relief methods, so legal double taxation should effectively be eliminated — but not eliminated by the treaty itself automatically."
   },
   {
@@ -1286,7 +1456,9 @@
       "Never as residence country does not allow deduction of higher taxes than those effectively paid abroad",
       "Only when the two countries are resident of EU Member Countries"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "A tax sparing clause (found in some DTCs, typically with developing countries) allows the investor to credit a notional tax — i.e. the tax that would have been payable at source if not for a tax incentive. This means crediting more than was actually paid, preserving the value of the incentive for the investor."
   },
   {
@@ -1301,7 +1473,9 @@
       "Is treated as a separate entity for tax purposes even though it does not qualify as such legally speaking",
       "Is only subject to taxation at the parent company's residence country"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "A PE is legally part of the parent company (no separate legal personality) but is treated for tax purposes as if it were a separate enterprise dealing with its head office at arm's length. The PE's profits are taxed in the source country under SO. PEs do not pay dividends — they repatriate profits."
   },
   {
@@ -1316,7 +1490,9 @@
       "Can be unilateral, bilateral or multilateral and is a preventive method to avoid conflicts with tax authorities on TP issues",
       "Is an agreement reached between two related entities to determine transfer prices"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "An APA is an agreement between a taxpayer and one or more tax authorities establishing the TP method and expected outcomes for future transactions. Unilateral APAs involve one tax authority; bilateral involve two (providing more certainty on double taxation); multilateral involve three or more."
   },
   {
@@ -1331,7 +1507,9 @@
       "Will provide new solutions to guarantee the suppression of double taxation",
       "Is the object of one of the BEPS project actions providing for an instrument to incorporate BEPS recommendations into domestic law"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "The MLI (BEPS Action 15) is a multilateral instrument that allows countries to simultaneously modify their existing bilateral DTCs to incorporate BEPS-recommended provisions (PPT, arbitration, PE definition changes, etc.) without renegotiating each treaty individually."
   },
   {
@@ -1346,7 +1524,9 @@
       "Royalty payments will only be taxable at the residence country",
       "Royalty payments will only be taxable at the source country"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Article 12 of the OECD Model: royalties are taxable ONLY at the residence country of the beneficial owner. The source country has no taxing right under the pure OECD Model (unlike dividends and interest which allow shared taxation). Note: the UN Model differs — it allows source taxation."
   },
   {
@@ -1362,7 +1542,10 @@
       "The self-use effect when determining the taxable income in the home country",
       "An economic double taxation effect"
     ],
-    "answer_letters": ["b", "e"],
+    "answer_letters": [
+      "b",
+      "e"
+    ],
     "explanation": "Dividend income from a foreign subsidiary triggers: (1) the underlying tax — the corporate income tax already paid by the subsidiary before distributing dividends, and (2) economic double taxation — the same profits taxed at entity level and again at shareholder level. Both b and e describe the same essential problem."
   },
   {
@@ -1377,7 +1560,9 @@
       "The fact of non-declaring all income to avoid paying taxes",
       "Local file implementation"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "The functional and risk analysis (FAR) is the cornerstone of any Local File TP analysis. It determines what functions each entity performs, what assets it uses, and what risks it assumes — which in turn determines what portion of profits it should earn."
   },
   {
@@ -1392,7 +1577,10 @@
       "Is an example of economic double taxation",
       "Will happen when paying dividends at international scale"
     ],
-    "answer_letters": ["c", "d"],
+    "answer_letters": [
+      "c",
+      "d"
+    ],
     "explanation": "PO-SO-PO describes the tax chain on dividends: subsidiary pays corporate tax (PO in its country), source country withholds on dividend distribution (SO), and the parent is taxed under PO in its residence country. This is classic economic double taxation (same profits, two different taxpayers). It is also exactly what happens with international dividend flows."
   },
   {
@@ -1407,7 +1595,9 @@
       "Total taxes paid worldwide are 33,000",
       "Total taxes paid in the residency country are 27,000"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "SO tax = 30,000 × 20% = 6,000. PO tax on global income (90,000) = 90,000 × 30% = 27,000. Under limited deduction, PO tax is reduced by the lesser of: foreign tax paid (6,000) or local tax on foreign income (30,000 × 30% = 9,000). Deduction = 6,000. Net PO = 27,000 - 6,000 = 21,000. Total global = 21,000 + 6,000 = 27,000. But answer c = 33,000 = if no relief is given. Wait — under limited deduction the deduction is the min(SO paid, PO rate × foreign income) = min(6,000, 9,000) = 6,000. PO net = 27,000 - 6,000 = 21,000. Total = 27,000. Answer a = 27,000. The intended exam answer is c (33,000) if NO deduction is applied — but that contradicts limited deduction. This may be one of the internally inconsistent questions identified previously. The correct mechanical answer under limited deduction is a (27,000)."
   },
   {
@@ -1422,7 +1612,9 @@
       "Direct taxes are personal while indirect taxes are mainly focusing on transactions or consumption",
       "Direct taxes are used to levy custom duties while indirect taxes levied on consumption"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The key distinction: direct taxes are levied on the person (their income, wealth, or profits) and cannot be shifted to another party. Indirect taxes are levied on transactions, consumption, or goods — and can be shifted to the consumer (like VAT). Progressive rates can apply to both."
   },
   {
@@ -1437,7 +1629,9 @@
       "Can be determined in many different ways as each country may set its own rules to set it",
       "Guarantees that no double tax residency will be produced at international tax level"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Each country has sovereign discretion to determine tax residency under its own domestic rules. This is why dual residency situations can arise — two countries each applying their own criteria may both claim the same person as a resident."
   },
   {
@@ -1452,7 +1646,9 @@
       "It will depend on our nationality",
       "We can't say for sure yet"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Tax residency for a given year (e.g. 2024) is generally determined at year-end — after 183 days have been counted or the year has closed. On an exam day in June 2024, the full year hasn't passed, so you cannot confirm residency status for 2024 yet."
   },
   {
@@ -1467,7 +1663,9 @@
       "Lack of coordination, but will no longer exist when the Multilateral Instrument (MLI) is fully implemented",
       "The existence of tax aggressive structures set by Multinational Companies"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "International double taxation arises from the sovereign right of each state to tax within its jurisdiction (PO or SO), combined with a lack of global coordination. The OECD Model recommends, but cannot impose, solutions. The MLI addresses specific BEPS issues but does not eliminate double taxation."
   },
   {
@@ -1482,7 +1680,9 @@
       "Limited Deduction Method will provide better double taxation avoidance compared to full exemption",
       "Limited deduction method is theoretically a way to avoid double taxation, but no PO country will ever use it due to the 'subsidy' effect"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Relief methods can be (and frequently are) set unilaterally in domestic law — a country can grant a participation exemption or foreign tax credit without needing a DTC. DTCs may also provide for relief, but domestic law is a sufficient basis. Limited deduction can create a subsidy when SO > PO rates."
   },
   {
@@ -1497,7 +1697,9 @@
       "Can be solved if the exemption method is used as a way to avoid double taxation",
       "Recommends not to tax interest on the source country as the EU directives also recommend"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "BEPS Action 4 addresses excessive interest deductions as a profit-shifting mechanism. It recommends a fixed ratio rule (capping net interest deductions to a percentage of EBITDA) to limit base erosion through intragroup debt, regardless of whether the interest rate itself is arm's length."
   },
   {
@@ -1512,7 +1714,9 @@
       "Establishes the way custom duties have to be levied and grants some exemptions",
       "Is a complement to an existing DTC providing clarifications or developing concepts included in the DTC"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "A protocol is an annexe or supplement to a DTC, having the same legal force. It may clarify ambiguous provisions, extend treaty benefits to new situations, or add specific rules for particular income types. It does not replace the main treaty."
   },
   {
@@ -1527,7 +1731,9 @@
       "There are only three methods accepted and recommended by the OECD which are CUP, Cost Plus and Profit Split",
       "Benchmark is the process where the market price analysis will be performed and includes the use of the recommended valuation methods provided by the OECD"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Benchmarking is the process of finding comparable uncontrolled transactions (using databases like Bureau van Dijk) and applying the appropriate OECD method (CUP, Cost Plus, Resale, TNMM, Profit Split) to establish an arm's length range. The OECD recognizes five methods, not three."
   },
   {
@@ -1542,7 +1748,9 @@
       "Never sets fixed tax rates on each kind of income, but a maximum tax rate which is recommended",
       "Recommends not to tax income from immovable property at the source country"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The OECD Model does not set fixed rates — it sets maximum rates where shared taxation applies (e.g. max 5% or 15% for dividends in Article 10, leaving the specific rate blank for negotiation) or exclusive residence taxation (as for royalties in Article 12 — no percentage at source at all). It recommends taxing immovable property at source."
   },
   {
@@ -1557,7 +1765,9 @@
       "In two different ways: collecting the tax in the very last transaction or collecting fractionally at each stage placing the final burden on the final consumer",
       "Consumption taxes are levied only on corporations at the time of importations of goods"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "A consumption tax can be structured as: (1) a single-stage tax collected only at the final point of sale (retail sales tax, used in some US states) or (2) a multi-stage fractional collection system like VAT. Both systems ultimately burden the final consumer."
   },
   {
@@ -1572,7 +1782,9 @@
       "A sales promoter which puts in contact potential clients with the sales team in the country where the company is located",
       "A place where, habitually and in a fixed place, part of the production of goods is made in the other country"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "A fixed place of production is a classic PE. Storage/display (option a) is explicitly excluded as preparatory/auxiliary. Construction sites under the OECD Model require 12 months (not 6). A sales promoter only putting parties in contact (not concluding contracts) generally does not create a PE."
   },
   {
@@ -1587,7 +1799,9 @@
       "An action where BEPS is focusing to avoid tax fraud",
       "Is always set on the SO Tax, as it's focusing on reducing the double taxation issue"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "A tax sparing clause is an incentive mechanism in a DTC that preserves the benefit of source-country tax incentives for the investor at the residence country. It functions as a concession by the residence country to the investor, not a BEPS anti-avoidance measure."
   },
   {
@@ -1602,7 +1816,9 @@
       "Part of the documentation obligations under Transfer Pricing regulations issued by the OECD",
       "Also known as Master File and together with the Local File are the two documents to be prepared by MNEs under OECD TP regulations"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The CbCR is the third tier of the BEPS Action 13 documentation package (Master File, Local File, CbCR). It is not in the OECD DTC model (it is in the BEPS transfer pricing guidelines). The three documents are distinct — CbCR ≠ Master File."
   },
   {
@@ -1617,7 +1833,9 @@
       "The taxpayer will be generating a negative tax effect for an amount of 2,000 in its residency country",
       "The taxpayer will pay a global tax of 20,000 (PO+SO)"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Full deduction: PO on global income = 70,000 × 20% = 14,000. Deduct full SO tax paid = 20,000 × 30% = 6,000. PO net = 14,000 - 6,000 = 8,000. But local PO on 50,000 only = 10,000. The SO deduction (6,000) exceeds the local PO attributable to foreign income (20,000 × 20% = 4,000), creating a subsidy/negative tax of 4,000 - 6,000 = -2,000. This means the full deduction creates a subsidy effect of 2,000."
   },
   {
@@ -1632,7 +1850,9 @@
       "Not signing any double taxation convention",
       "Create some additional taxation on Virtual Permanent Establishments located in the country"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Wait — this seems counterintuitive. Full exemption of foreign income (and also domestic income?) seems extreme. More logically: offering full exemption on foreign income (not all income) would incentivize taxpayers to invest abroad. None of the options is perfect, but the exam answer is b. Exempting foreign income makes foreign investment more attractive from a tax perspective."
   },
   {
@@ -1647,7 +1867,9 @@
       "External CUP will be used by companies that are exclusively selling to group companies products that can be easily compared to other products sold in market conditions",
       "External CUP is used when Cost Plus or Resale Methods are not applicable due to market restrictions such as anti-dumping laws"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Internal CUP: the tested company itself sells the same (or similar) product to both group and third-party customers — so you can compare the group price with the third-party price directly. External CUP: no internal comparable exists, so you use prices between two independent third parties in the market. Both require high product comparability."
   },
   {
@@ -1662,7 +1884,9 @@
       "Will be fully entitled to claim a tax sparing clause",
       "The acceptancy of the holding company could be challenged by the real beneficial owner concept under the PPT"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "The Principal Purpose Test (BEPS Action 6, Article 29 OECD Model) allows tax authorities to deny treaty benefits if obtaining those benefits was one of the principal purposes of the arrangement. An interposed Dutch holding without genuine substance may fail the PPT or the beneficial ownership test."
   },
   {
@@ -1677,7 +1901,9 @@
       "The PE profit would be tax exempted in the other country",
       "There will never be a taxable profit in the PE"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "PE profits are taxed in the country where the PE is located under the Source Obligation principle. The PE does not have PO (it is not a resident taxpayer). The parent company's residence country should exempt or provide a credit for the PE profits to avoid double taxation."
   },
   {
@@ -1692,7 +1918,9 @@
       "Is produced when two countries sign a DTC which does not follow OECD recommendations",
       "Is one of the BEPS project actions"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Harmful Tax Practices is the subject of BEPS Action 5. It focuses on preferential regimes that attract profit without corresponding economic activity, and on improving transparency through exchange of tax rulings. It is not about legal tax optimization or dual residency."
   },
   {
@@ -1707,7 +1935,9 @@
       "Are enforceable provisions for the taxpayers and they can even determine penalties in case of non-fulfillment",
       "Should not be given any value as they do not have any legal significance"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "OECD Guidelines are soft law — authoritative and widely followed but not legally binding in the strict sense. They are incorporated into many domestic laws and relied upon by courts globally, giving them practical (if not formal) legal significance."
   },
   {
@@ -1722,7 +1952,9 @@
       "Under PO, in the country where the company is tax resident and under SO in the country where the Director is tax resident",
       "Under SO, in the country where the company is tax resident and under PO in the country where the Director is tax resident"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Article 16 OECD Model (Directors' fees): remuneration paid to a director may be taxed in the country where the company is resident (SO — source is the payer's country). The director is taxed under PO in the country of their own residence. So: company country = SO; director's country = PO."
   },
   {
@@ -1737,7 +1969,9 @@
       "SO tax will be 12,000 euros",
       "PO+SO tax will be 34,000 euros"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "SO tax = 50,000 × 10% = 5,000. For PO: global income = 150,000. Tax on 150,000: 40K×10% + 40K×20% + 40K×30% + 30K×40% = 4,000+8,000+12,000+12,000 = 36,000. Average rate on 150K = 36,000/150,000 = 24%. Apply 24% to domestic income (100,000): 24,000. But wait — PO tax on 100K at the rate triggered by 150K. Actually: the rate applicable = 36,000/150,000 = 24%. PO = 100,000 × 24% = 24,000. Hmm, doesn't match any option cleanly. Alternative: effective rate on 100K only = (4,000+8,000+12,000)/100,000 = 24,000/100,000 = 24%. PO = 24,000? Total = 24,000 + 5,000 = 29,000. Option d = 34,000. This is the 2024 = 2025 repeat question — answer per official exam marking is d."
   },
   {
@@ -1752,7 +1986,9 @@
       "None, both structures will be taxed under similar principles",
       "Both the subsidiary structure and the PE structure will suffer from the legal double taxation effect"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Subsidiary: separate legal entity → distributes dividends → triggers underlying tax (economic double taxation: profits taxed at subsidiary level + at parent level). PE: legally part of the parent → profit repatriation is not a dividend → only legal double taxation risk (same profits taxed in source country and at the parent's residence)."
   },
   {
@@ -1767,7 +2003,9 @@
       "Does not allow artists' income being artificially tagged as 'business profits' to benefit from lower tax rates or exemptions in the SO country",
       "Is a recommendation of the OECD to tax artists only in the PO country"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The 'Sinatra clause' (Article 17 OECD Model — Entertainers and Sportspersons) ensures that income earned by artists and sportspeople from activities performed in a country can be taxed in that source country — preventing artists from labelling performance income as 'business profits' to escape source taxation."
   },
   {
@@ -1782,7 +2020,9 @@
       "Is fully allowed in the case that both entities are having tax losses",
       "May generate a custom duty underpayment"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "If both tax authorities independently adjust the same intragroup price and reach different arm's length results, the same profit may end up being taxed twice. The MAP (Mutual Agreement Procedure) and bilateral APAs exist to prevent this — but they require both authorities to agree."
   },
   {
@@ -1797,7 +2037,9 @@
       "In general, all dividend payments made between group companies in EU countries are not taxed under SO",
       "Parent and subsidiary structures will suffer from the underlying tax effect, but may claim a tax refund at the residency country of the Parent Co."
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The Parent-Subsidiary Directive (PSD) eliminates withholding tax on dividends distributed from an EU subsidiary to a qualifying EU parent (generally ≥10% shareholding held for ≥1 year). It covers group companies — not all entities. Option b (all entities) is too broad. Option a describes the Interest & Royalties Directive."
   },
   {
@@ -1812,7 +2054,9 @@
       "May have to pay VAT and custom duties at the border, depending on the nature of the goods imported",
       "May have to pay only VAT depending on the nature of the goods imported"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "When importing into the EU as a final consumer, three types of charges may apply: (1) VAT (charged on all goods entering free circulation), (2) customs duties (charged on goods from outside the EU, depending on origin and nature), and (3) externality taxes/excise duties (e.g. on alcohol, tobacco, fuel). All three can be triggered simultaneously."
   },
   {
@@ -1827,7 +2071,9 @@
       "Use the real beneficial owner principle when performing a benchmark",
       "Detail in the Master File the process followed to check if market price rule has been followed"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "The OECD recommends a 'most appropriate method' approach: the TP method should be selected based on the nature of the transaction, the availability of comparables, and the functional profile of the parties. No single method (like cost plus) is universally prescribed. The Local File (not Master File) details the methodology per transaction."
   },
   {
@@ -1842,7 +2088,9 @@
       "Will show the same result as if PO principle was applied with full exemption on foreign income",
       "Will increase foreign investment in the country"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "PO (personal obligation) normally means taxing residents on worldwide income. If the country only taxes local income, it is technically applying a territorial/source system to residents. However, the practical result is identical to PO with a full exemption on foreign income — option c correctly identifies this equivalence."
   },
   {
@@ -1857,7 +2105,9 @@
       "Will increase the cost of purchase for this business, regardless of the entity activity",
       "Will generate a tax credit and a tax refund for the entity"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "The reverse charge (self-assessment) mechanism applies when an EU business imports goods from outside the EU or receives certain services from abroad. The buyer self-assesses VAT (charges VAT to itself) and simultaneously claims it as input VAT — net cash flow effect is zero for a fully taxable business, but it does not increase cost."
   },
   {
@@ -1872,7 +2122,9 @@
       "Is regulated on the OECD DTC Model",
       "To avoid lack of reporting obligations under DAC6"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Withholding tax is a mechanism where the payer (e.g. a company paying dividends, interest, or royalties to a non-resident) is made responsible for deducting and remitting tax on behalf of the non-resident recipient. This ensures effective SO tax collection without needing the non-resident to file a return in the source country."
   },
   {
@@ -1887,7 +2139,9 @@
       "May happen only for individuals but never to entities",
       "May happen when importing goods from a tax haven"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Dual tax residency can happen to both individuals and companies. When a DTC exists, the tie-breaker rules in Article 4 resolve which country is the sole treaty residence country. Without a DTC, dual residency leads to double PO taxation."
   },
   {
@@ -1902,7 +2156,9 @@
       "It will depend on our nationality",
       "We can't say for sure yet"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "On exam day (June 2025), the 2025 tax year is not yet complete — the 183-day threshold has not been crossed for everyone, and year-end has not arrived. Residency for 2025 cannot be confirmed yet. This is a consistent annual exam question."
   },
   {
@@ -1917,7 +2173,10 @@
       "Two different persons are taxed over the same income",
       "Can be also referred as 'the underlying tax effect'"
     ],
-    "answer_letters": ["c", "d"],
+    "answer_letters": [
+      "c",
+      "d"
+    ],
     "explanation": "Economic double taxation: same income taxed in the hands of two different persons (e.g. subsidiary pays corporate tax, then shareholder pays income tax on the same distributed profit). This is also described as the 'underlying tax effect' — both c and d correctly characterise it."
   },
   {
@@ -1932,7 +2191,9 @@
       "The Country by Country Report",
       "The Benchmark"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "The Master File provides a high-level overview of the MNE group: organisational structure, description of business activities, intangibles, intercompany financing, and financial positions. This is precisely what an auditor needs to understand the group as a whole — not just the specific entity being audited."
   },
   {
@@ -1947,7 +2208,9 @@
       "The marginal tax rate is 15%",
       "All income would be taxed at 20% tax rate"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Tax = 200,000 × 10% + 200,000 × 20% = 20,000 + 40,000 = 60,000. Average rate = 60,000/400,000 = 15%. Marginal rate = 20% (income falls in 200,001–500,000 bracket). Each additional 100,000 would also be taxed at 20% until the 500,000 threshold. Option b is correct."
   },
   {
@@ -1962,7 +2225,9 @@
       "To avoid the misuse of the TNMM as method to calculate the market price interest rate",
       "To avoid the use of hybrid mismatches as a tax evasion strategy"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "BEPS Action 4 targets excessive intragroup debt that artificially inflates interest deductions — not the interest rate itself (that's a TP issue handled by Action 8-10). The concern is the volume of debt creating high debt/EBITDA ratios that would not exist between independent parties. Hybrid mismatches are Action 2."
   },
   {
@@ -1977,7 +2242,9 @@
       "Could be challenged and tax benefits rejected if the PPT doesn't show real business activity",
       "Is forbidden according to Pillar 2 and DAC6 guidelines"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Under BEPS Action 6, the Principal Purpose Test (PPT) denies treaty benefits if obtaining those benefits was one of the principal purposes of the arrangement. Without genuine economic substance, a conduit entity may have treaty benefits denied. It is not automatically illegal or always valid — the PPT test is applied on the facts."
   },
   {
@@ -1992,7 +2259,9 @@
       "It includes the profit generated when the immovable property is sold",
       "Fictional income arising from self-use of such properties is not included in this income category"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Article 6(2) OECD Model defines immovable property — the DTC definition prevails for treaty purposes. The DTC definition typically refers to domestic law of the source country for specifics, but the treaty itself provides a framework definition. Capital gains on immovable property are covered by Article 13. Self-use income can be included if domestic law deems it."
   },
   {
@@ -2007,7 +2276,9 @@
       "Could generate double taxation issues that will be always solved by the SO country thanks to the exemption method",
       "PO and SO will always generate double taxation issues"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "From a single country's perspective, PO (applied to residents) and SO (applied to non-residents) target different taxpayer categories — so no single taxpayer suffers double taxation domestically from these two principles alone. International double taxation arises when multiple countries apply their own PO and SO rules to the same cross-border income."
   },
   {
@@ -2022,7 +2293,9 @@
       "Needs to be modulated by a functional and risk analysis",
       "Does not exist — the correct name is resale plus method"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The Resale Minus (Resale Price Method): starts from the resale price to third parties and subtracts a gross margin to arrive at the arm's length purchase price. Any TP method needs to be informed by the functional and risk analysis to ensure the selected margin is appropriate for the functions performed. Options a and d have factual errors."
   },
   {
@@ -2037,7 +2310,9 @@
       "Income obtained by the PE will never be taxed in country A if there is a DTC that follows OECD model",
       "Income obtained by the PE will be taxed if the PE lasts more than 12 months in country A"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Once a PE exists in country A, country A taxes the profits attributable to that PE under SO. Only the profits attributable to the PE (Article 7) are taxed — not the entire company's global profits. The PE's taxation in country A is a source-based obligation, regardless of duration (PE duration threshold determines whether the PE exists; once it does, attribution rules apply)."
   },
   {
@@ -2052,7 +2327,9 @@
       "This will help avoiding the double taxation effect",
       "If the treaty allows SO on some income detailed separately, this last rule may prevail over the business profit rule"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Article 7 establishes the general rule (residence taxation for business profits without PE). However, specific income articles (e.g. Article 10 dividends, 11 interest, 12 royalties) may grant source taxation rights — those specific rules prevail over the general business profits rule. This is the lex specialis principle within the DTC."
   },
   {
@@ -2067,7 +2344,9 @@
       "Her taxable base under PO will be 50,000 in country 1 and 15,000 under SO in country 2",
       "Her taxable base under PO will be 15,000 in country 1 and 50,000 under SO in country 2"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Article 15 OECD Model (Employment income): employment income may be taxed at source only if the employee is present in country 2 for more than 183 days in 12 months, AND/OR the employer is resident or has a PE in country 2. Mary's employer (company X) is based in country 1 — so the 183-day test and employer residency test both favour country 1. No SO in country 2. Full 65,000 is taxed under PO in country 1 (with potential relief for foreign income)."
   },
   {
@@ -2082,7 +2361,9 @@
       "It is a reporting obligation where entities or their lawyers and tax advisors have to inform about restructuring at international level",
       "Focus on making entities pay taxes where they are really generating their profits"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "ATAD3 (the 'UNSHELL' Directive proposal) targets shell entities lacking minimum economic substance in EU member states. Entities failing the substance criteria are denied DTC and EU Directive benefits. It is an EU legislative initiative (Directive), not an OECD guideline. ATAD1/ATAD2 cover other anti-avoidance measures."
   },
   {
@@ -2097,7 +2378,9 @@
       "The company will have to amend its invoices to foreign businesses and apply output VAT",
       "The company shall claim its suppliers to amend their invoices and reissue them without input VAT"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Sales to businesses outside the country (exports or intra-EU B2B supplies) are zero-rated — the seller charges 0% but retains the right to recover all input VAT. This is a fundamental VAT principle: exporters should not bear VAT costs that would make their goods uncompetitive internationally. A full VAT refund is available."
   },
   {
@@ -2112,7 +2395,9 @@
       "Internal CUP will be used by companies that are exclusively selling to group companies products that could not be easily compared to other products sold in market conditions",
       "External CUP is to be used when Cost Plus or Resale Methods are not applicable due to market restrictions, such as anti-dumping laws"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Internal CUP: the company itself transacts the same (or comparable) product with both related and unrelated parties — the internal third-party transaction is the comparable. External CUP: no internal comparable exists; you find comparables between two independent parties in the market. Both are high-quality methods when applicable."
   },
   {
@@ -2127,7 +2412,9 @@
       "Both methods correct the double taxation issue and global taxes paid are 300 in both cases",
       "The PO country is granting a subsidy to the taxpayer under the limited tax credit method"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Full exemption: PO taxes 0 (exempt), SO = 1,000 × 30% = 300. Global = 300. Limited tax credit: PO on 1,000 = 200, credit limited to PO rate (20%) = 200. SO = 300. Net PO = 200 - 200 = 0. Global = 300. So both give 300 total? But wait: under full exemption, PO country exempts → PO = 0. Total = 300 (SO only). Under limited credit: credit capped at 200, PO = 0, SO = 300. Total = 300. Both = 300. But option a says 200... The answer per exam is a, which seems to imply the global tax is 200 — this may assume SO = PO rate which contradicts SO = 30%. The intended exam answer is a."
   },
   {
@@ -2142,7 +2429,9 @@
       "Exemption with progressivity is unfair and inequal in a country with progressive tax rates",
       "Exemption with progressivity does not tax foreign income nor takes it into account to tax the rest of income"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "Exemption with progressivity maintains tax fairness: foreign income is not taxed domestically (respecting the DTA obligation), but it is taken into account to determine the rate applied to domestic income. This preserves the progressive rate structure — wealthier taxpayers with foreign income still face higher average rates on their domestic income, unlike under full exemption which ignores foreign income entirely."
   },
   {
@@ -2157,7 +2446,9 @@
       "The so-called Multilateral Agreement on Prices helping solve issues on Transfer Pricing regulations",
       "The so-called 'More Are Prosecuted act' trying to send tax evaders to jail"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "The MAP (Article 25 OECD Model) is a dispute resolution mechanism allowing taxpayers to request competent authorities to resolve cases of double taxation or taxation not in accordance with the treaty. It involves negotiation between tax authorities, not a court. BEPS Action 14 improved its effectiveness."
   },
   {
@@ -2172,7 +2463,9 @@
       "Are not an issue if SO > PO and limited deduction is the way double taxation is relieved",
       "Taxation is not a variable to consider when investing abroad"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "While tax is an important consideration, investment decisions involve multiple factors: expected return on investment, political and regulatory risk, currency risk, market size, exit options, legal system, and yes — tax treatment. Taxation alone should not drive investment decisions."
   },
   {
@@ -2187,7 +2480,9 @@
       "This income qualifies as capital gain and should only be taxed in PO country unless the entity owns real estate, even if a small part of assets",
       "This income qualifies as capital gain and following OECD recommendations should only be taxed in PO country unless the entity owns real estate weighing more than 50% of its assets"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Article 13 OECD Model: capital gains on shares are generally taxed only at the residence (PO) country. Exception: if the entity's assets consist principally of (>50%) immovable property located in the other country, the source country may also tax the gain. This prevents circumventing Article 6 by holding real estate through a company."
   },
   {
@@ -2202,7 +2497,9 @@
       "The income should be taxed in Country B as the platform's digital interface constitutes a fixed place of business under Article 5",
       "The income qualifies as capital gain under Article 12 and is subject to withholding tax in Country B"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "The OECD (Pillar 1, digital economy) acknowledges that traditional PE rules based on physical presence are insufficient for the digital economy. Some countries have unilaterally introduced digital PE or significant economic presence concepts. The current OECD approach is working toward a multilateral solution (Pillar 1 Amount A), but interim measures include DSTs. Option a correctly reflects the current state of play."
   },
   {
@@ -2217,7 +2514,9 @@
       "Commit to exchange of information and implement transparency standards",
       "Avoid signing any double tax treaties"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "The OECD/G20 Global Forum on Transparency and Exchange of Information evaluates jurisdictions on tax transparency and information exchange. To avoid blacklisting, a jurisdiction must commit to automatic exchange of financial account information (CRS), exchange tax rulings, and implement the CbCR framework."
   },
   {
@@ -2232,7 +2531,9 @@
       "Entry into force clause",
       "Mutual Agreement Procedure"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Treaty shopping (using an intermediary country's DTC to access benefits not otherwise available) is the paradigmatic anti-avoidance target. BEPS Action 6 (PPT and LOB) is specifically designed to prevent it. The entry into force clause and MAP are procedural provisions; source income exemptions are legitimate DTC benefits."
   },
   {
@@ -2247,7 +2548,9 @@
       "SO tax will be 12,000 euros",
       "PO+SO tax will be 34,000 euros"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "SO = 50,000 × 10% = 5,000. Global income = 150,000. Tax on 150,000: 40K×10% + 40K×20% + 40K×30% + 30K×40% = 4,000+8,000+12,000+12,000 = 36,000. Average rate = 36,000/150,000 = 24%. Apply 24% rate to domestic income (100,000): PO = 24,000. Total PO+SO = 24,000+5,000 = 29,000. This doesn't match d (34,000). If we apply the rate to global income attributable: alternative calculation applies each bracket to 100,000 using the blended rate. The official exam answer is d = 34,000. One possible route: PO = 40K×10%+40K×20%+20K×30% = 4K+8K+6K = 18,000... but 18K = option b. The question appears in both 2024 and 2025 exams. Verify against official solution."
   },
   {
@@ -2262,7 +2565,9 @@
       "This method is fully valid as long as the interest rate applied is aligned with arm's length standards",
       "While the strategy is feasible, Polish transfer pricing and thin capitalization rules must be considered to understand the tax consequences for the Group"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "BEPS Action 4 does not prohibit intercompany loans — it limits interest deductions to a fixed ratio of EBITDA (typically 10-30%). An arm's length rate is necessary but not sufficient; the volume of debt (97% leverage) may breach thin capitalization rules. The strategy is feasible but requires careful analysis of Polish domestic BEPS implementation."
   },
   {
@@ -2277,7 +2582,9 @@
       "Although exempt, the Hungarian income increases the effective marginal rate on domestic income, leading to higher taxation of the €6,000",
       "Austria taxes the entire €8,000 at 25% and provides a credit for the tax already paid in Hungary"
     ],
-    "answer_letters": ["c"],
+    "answer_letters": [
+      "c"
+    ],
     "explanation": "Under exemption with progressivity: the €2,000 Hungarian income is exempt from Austrian tax, but is included in the tax base to determine the rate applicable to the €6,000 Austrian income. Since the rate on €8,000 (25%) > rate on €6,000 alone, the Austrian income is taxed at a higher rate than it would be without the foreign income. This is the progressivity effect — higher taxation of domestic income without taxing foreign income."
   },
   {
@@ -2292,7 +2599,9 @@
       "An Australian consultant spends 4 months a year in Singapore advising a local client on a continuous basis for 3 consecutive years",
       "A Brazilian firm appoints an agent in Argentina who, though formally independent, works exclusively for the Brazilian firm and routinely negotiates contracts on its behalf"
     ],
-    "answer_letters": ["d"],
+    "answer_letters": [
+      "d"
+    ],
     "explanation": "Option d: an agent who is formally independent but acts exclusively for one principal and habitually concludes/negotiates contracts constitutes a dependent agent PE (Article 5(5)/(6) OECD Model). The formal independence is disregarded when the agent is de facto economically dependent. Options a (no physical presence) and b (5 months, below 12-month threshold) don't clearly meet PE thresholds. Option c (4 months/year = cumulative issue) may qualify under some service PE clauses, but option d is the clearest case."
   },
   {
@@ -2307,7 +2616,9 @@
       "The parent is fully tax-exempt in its residence state but may still benefit if it holds over 10% of the subsidiary",
       "The parent and subsidiary are both EU-resident, the parent holds 20% of the subsidiary, but only for 4 months"
     ],
-    "answer_letters": ["a"],
+    "answer_letters": [
+      "a"
+    ],
     "explanation": "PSD conditions: (1) parent in one EU Member State, (2) subsidiary in another EU Member State, (3) minimum 10% participation (some member states may apply lower threshold), (4) minimum holding period (typically 2 years, which can be met post-distribution with a commitment), and (5) both entities are subject to corporate income tax. Option c (tax-exempt parent) generally does not qualify. Option d (4 months) fails the holding period requirement."
   },
   {
@@ -2322,7 +2633,9 @@
       "Pillar 1 and 2 both apply exclusively to digital platform businesses operating in more than three jurisdictions with over €750M in digital revenue",
       "Pillar 1 aims to eliminate double taxation through hybrid mismatch rules, and Pillar 2 requires withholding taxes in low-tax jurisdictions"
     ],
-    "answer_letters": ["b"],
+    "answer_letters": [
+      "b"
+    ],
     "explanation": "Pillar 1: reallocates 'Amount A' (a portion of residual profits of the largest and most profitable MNEs, revenue >€20B and profitability >10%) to market jurisdictions regardless of physical presence. Pillar 2 (GloBE rules): introduces a 15% global minimum effective tax rate for MNE groups with consolidated revenue >€750M, using IIR, UTPR, and QDMTT mechanisms."
   },
   {
@@ -2337,7 +2650,639 @@
       "Is an example of economic double taxation",
       "Will happen when paying dividends at international scale"
     ],
-    "answer_letters": ["c", "d"],
+    "answer_letters": [
+      "c",
+      "d"
+    ],
     "explanation": "PO-SO-PO: (1) the subsidiary earns profit and pays corporate income tax (PO in subsidiary's country), (2) the source country withholds on the dividend distribution (SO), (3) the parent company is taxed on the dividend received (PO in parent's country). The same profit is taxed in the hands of two different persons — subsidiary then parent — which is the definition of economic double taxation. And it literally is what happens when dividends are paid internationally."
+  },
+  {
+    "id": "2020_q1",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "BEPS & Anti-Avoidance",
+    "question": "BEPS Action 1 on Tax Challenges arising from Digitalization:",
+    "options": [
+      "Has concluded that any profits obtained by a group of companies have to be reported through the Country by Country Report",
+      "Has been closed because no agreement has been reached by the international community in this regard",
+      "Is focusing on finding a common approach regarding profits and taxing rights allocation as well as defining the mechanisms to ensure the avoidance of BEPS practices",
+      "Has been subject to a consultation in front of the European Court of Justice to determine compatibility with the EU Treaties"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "BEPS Action 1 on the digital economy focuses on finding a common international approach to allocate profits and taxing rights (Pillar 1) and ensuring minimum taxation (Pillar 2). No agreement was reached initially but work continues under the Inclusive Framework. The ECJ has no role here."
+  },
+  {
+    "id": "2020_q2",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "BEPS & Anti-Avoidance",
+    "question": "Treaty shopping refers to:",
+    "options": [
+      "A legal and accepted possibility to freely choose the best jurisdiction to formally set up a company with no real activity in order to benefit from the DTC network of that country",
+      "Is covered under Article 7 of the OECD Model Convention and provides for the better location for a permanent establishment",
+      "A negotiation technique used by countries in order to achieve better conditions in their respective bilateral Double Tax Convention",
+      "A tax avoidance measure aimed at benefiting from Double Tax Conventions without being entitled to through the use of interposed instrumental entities"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "Treaty shopping is the practice of interposing an entity in a third country to access DTC benefits to which the ultimate beneficial owner would not otherwise be entitled. It is a tax avoidance practice targeted by BEPS Action 6 (PPT and LOB rules). It is not legal or accepted under current international standards."
+  },
+  {
+    "id": "2020_q3",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "BEPS & Anti-Avoidance",
+    "question": "In International Taxation 'hybrids':",
+    "options": [
+      "Refer to countries where there are different regimes depending on the region where the person lives",
+      "Refer to situations which may lead to double non-taxation as a consequence of a mismatch in the tax treatment of an instrument or an entity in two or more different countries",
+      "Are those territories having signed exchange of information agreements with the EU but who are still considered as low tax jurisdictions",
+      "Refer to the possibility to deduct at the residence country a higher tax than the one paid at the source country"
+    ],
+    "answer_letters": [
+      "b"
+    ],
+    "explanation": "Hybrid mismatches exploit differences in how two countries classify an instrument or entity — producing deduction/no-inclusion outcomes (double non-taxation). BEPS Action 2 targets these arrangements through coordinated domestic and treaty-level rules."
+  },
+  {
+    "id": "2020_q4",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Transfer Pricing",
+    "question": "The three-tier approach in transfer pricing refers to:",
+    "options": [
+      "The standard transfer pricing documentation to be produced by multinational groups",
+      "The interquartile range to be considered to determine transfer prices",
+      "The number of available databases to carry out a benchmark analysis",
+      "The number of traditional transaction valuation methods"
+    ],
+    "answer_letters": [
+      "a"
+    ],
+    "explanation": "The three-tier TP documentation package under BEPS Action 13 consists of: (1) Master File — group-level overview, (2) Local File — entity-specific transaction analysis, and (3) Country by Country Report — jurisdiction-by-jurisdiction financial data."
+  },
+  {
+    "id": "2020_q5",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "BEPS & Anti-Avoidance",
+    "question": "The OECD BEPS Project:",
+    "options": [
+      "Encourages multinational groups to relocate profits in low taxation countries",
+      "Refers to situations leading to double taxation which are therefore usually avoided by taxpayers",
+      "Has abolished the arm's length principle because it leads to many problems",
+      "Promotes necessary changes in domestic and international tax regulations to allocate taxable profits where the taxpayer's real economic activity is carried out"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "BEPS aims to align taxation with where economic activity occurs and value is created. It does not encourage profit shifting — it combats it. The arm's length principle remains the foundation of TP rules under BEPS."
+  },
+  {
+    "id": "2020_q6",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Tax Residency & Connecting Factors",
+    "question": "For international taxation purposes 'the habitual abode':",
+    "options": [
+      "Has an impact to determine entities' tax residency when there is a residency conflict and a Double Tax Convention is applicable",
+      "Corresponds to the country from which an individual is a national",
+      "Is one of the criteria provided by the tie-breaker rule contained in article 4 of Double Tax Conventions and generally refers to the place where the person stays longer within a tax period",
+      "Is one of the criteria provided by the tie-breaker rule contained in article 4 of Double Tax Conventions and generally refers to the place where the person has a permanent home"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "The habitual abode is the third tie-breaker in Article 4(2) OECD Model for individuals — it refers to the country where the person stays most frequently (counted by days of presence). Option d describes the 'permanent home' criterion, which is the first tie-breaker, not habitual abode. The habitual abode applies only to individuals, not entities."
+  },
+  {
+    "id": "2020_q7",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Methods to Avoid Double Taxation",
+    "question": "Double tax relief methods (exemption or tax credit ones):",
+    "options": [
+      "Apply at the level of the source country to avoid or reduce double taxation",
+      "Are only applicable when the taxpayer is a national of the country and has been living there for at least 5 years",
+      "Apply at the level of the taxpayer's residence country to avoid or reduce double taxation",
+      "Are exclusively provided by Double Tax Conventions but never by domestic law"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "Relief methods (exemption and credit/deduction) are applied by the residence (PO) country. They can be provided either by domestic law or by DTCs — not exclusively by DTCs. Nationality and years of residency are irrelevant."
+  },
+  {
+    "id": "2020_q8",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Double Taxation: Concepts",
+    "question": "Economic double taxation implies:",
+    "options": [
+      "Taxation of the same income obtained in similar economic activities",
+      "Taxation of the same income by two similar taxes in the same period on two different persons",
+      "Taxation of the same taxable event because of dual residency situation",
+      "Taxation of the same taxable event, same period and same or similar tax on the same person"
+    ],
+    "answer_letters": [
+      "b"
+    ],
+    "explanation": "Economic double taxation: same income taxed in two different persons' hands (e.g. corporate profits taxed at company level, then dividends taxed at shareholder level). Option d describes legal double taxation (same person). Option c describes a dual residency scenario."
+  },
+  {
+    "id": "2020_q9",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "OECD Guidelines & Sources of Law",
+    "question": "The OECD Model Tax Convention:",
+    "options": [
+      "Is a guide and a reference for the negotiation and interpretation of bilateral double tax conventions",
+      "Has been abolished by the BEPS Project and now the countries will only apply the Multilateral Instrument",
+      "Has been transposed to EU countries domestic law by means of Directives and then is fully binding for EU countries",
+      "Is very controversial because only serves to western industrialized countries' interests"
+    ],
+    "answer_letters": [
+      "a"
+    ],
+    "explanation": "The OECD Model is a non-binding reference document — a guide and starting point for DTC negotiations. It has not been abolished by BEPS (the MLI modifies existing treaties to incorporate BEPS recommendations). The EU Directives are separate instruments and do not incorporate the OECD Model directly."
+  },
+  {
+    "id": "2020_q10",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Transfer Pricing",
+    "question": "The arm's length principle implies that:",
+    "options": [
+      "The tax administrations should assume that associated enterprises manipulate their profits",
+      "Associated enterprises cannot engage into transactions with each other unless approved by the corresponding authorities",
+      "Associated enterprises must always determine prices in their common transactions through a benchmark analysis",
+      "Parity of tax treatment for members of MNE Groups and independent enterprises can be achieved"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "The arm's length principle (Article 9 OECD Model) seeks fiscal parity between MNE group transactions and those between independent enterprises. Tax authorities do not automatically assume manipulation. A benchmark is one tool but not always mandatory."
+  },
+  {
+    "id": "2020_q11",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "BEPS & Anti-Avoidance",
+    "question": "We can say that the current international transparency standards:",
+    "options": [
+      "Have improved tax compliance and help to prevent base erosion and profit shifting",
+      "Are exclusively based on exchange of information upon request because most countries have opposed to the automatic standard",
+      "Have implied the growth of bank secrecy practices",
+      "Have a reduced scope and only apply in connection with transfer pricing issues"
+    ],
+    "answer_letters": [
+      "a"
+    ],
+    "explanation": "The current standard — driven by BEPS Action 5 and the OECD's Common Reporting Standard (CRS) — is automatic exchange of information. This has significantly improved transparency and tax compliance. Bank secrecy has been reduced, not grown."
+  },
+  {
+    "id": "2020_q12",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Double Taxation: Concepts",
+    "question": "By underlying tax we mean:",
+    "options": [
+      "A tax applied at the lowest marginal rate",
+      "Withholding tax paid at the source country on a dividend distribution",
+      "Tax paid by a company in a low tax jurisdiction",
+      "Corporate Income Tax paid by a subsidiary on the profits obtained which are further distributed as dividends"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "The underlying tax is the corporate income tax already paid by the subsidiary on the profits from which dividends are later distributed. It creates economic double taxation. The withholding tax on the distribution is a separate, additional layer."
+  },
+  {
+    "id": "2020_q13",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Double Taxation: Concepts",
+    "question": "If an entity is taxed on royalties received in both the residence and the source country, this leads to:",
+    "options": [
+      "Economic double taxation",
+      "A sound base to file a claim before the Human Rights Court",
+      "Legal double taxation",
+      "A transfer pricing issue"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "The same person (the royalty recipient) is taxed on the same income in two countries — that is the definition of legal double taxation. Economic double taxation would involve two different persons being taxed on the same underlying income."
+  },
+  {
+    "id": "2020_q14",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Permanent Establishment (PE)",
+    "question": "According to article 5 of the OECD Model DTC, a permanent establishment will be deemed to exist when:",
+    "options": [
+      "A company has a building site in another country regardless the duration of the construction or installation works",
+      "A company has in another country a stock of goods to carry out storage, display or delivery activities",
+      "A company carries out its activities in another country through a fixed place of business such as a branch, an office or a place of extraction of natural resources, among other situations",
+      "A company has in another country an independent agent acting on its behalf"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "Article 5(1) OECD Model: a PE is a fixed place of business through which the business is wholly or partly carried on — including branches, offices, factories, workshops, mines. Building sites require a minimum duration (12 months). Storage/display is specifically excluded. Independent agents (acting in ordinary course of their business) do not create a PE."
+  },
+  {
+    "id": "2020_q15",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Double Tax Conventions (DTCs)",
+    "question": "A DTC provides that tax on interest may be levied by the source country at a maximum rate of 10%. If source country domestic law provides for a 5% tax rate on interest, then:",
+    "options": [
+      "Tax to be paid at source will be 10%",
+      "Tax to be paid at source will be 10% but the residence country will grant a tax credit for 5%",
+      "No tax will be paid because there is a contradiction between the DTC and domestic law",
+      "Tax to be paid at source will be 5%"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "The DTC sets a ceiling (maximum 10%). If domestic law is more favourable (5%), the taxpayer benefits from the lower domestic rate. There is no contradiction — the DTC limits the source country's right to tax but cannot force it to tax higher than its domestic law."
+  },
+  {
+    "id": "2020_q16",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Double Tax Conventions (DTCs)",
+    "question": "A Mutual Agreement Procedure:",
+    "options": [
+      "Can only be requested and accepted in case of transfer pricing adjustments",
+      "Is a procedure of discussion between the tax authorities of two or more countries and cannot be closed until a decision is reached",
+      "Has been submitted to a thorough review under the BEPS Project for efficiency sake in order to enlarge its scope and effectiveness",
+      "Will be suppressed and substituted by an Arbitration procedure"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "BEPS Action 14 (Making Dispute Resolution Mechanisms More Effective) reviewed and strengthened the MAP process — widening its scope and adding minimum standards for timely resolution. The MAP is not limited to TP cases and has not been abolished; arbitration is an addition, not a replacement."
+  },
+  {
+    "id": "2020_q17",
+    "type": "multiple_choice",
+    "year": 2020,
+    "topic": "Methods to Avoid Double Taxation",
+    "question": "When a Double Tax Convention provides for a tax sparing clause:",
+    "options": [
+      "The most efficient scenario for the taxpayer is the application of the exemption method by the residence country",
+      "The taxpayer is granted a tax allowance at the source country through a reduction of the applicable tax rate",
+      "The taxpayer can only apply the limited credit method at the residence country and thus deduct a lower tax than the one effectively paid",
+      "The taxpayer will have a tax benefit at the residence country consisting on the deduction of a higher tax than the one effectively paid at the source country"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "A tax sparing clause allows the taxpayer to credit at the residence country a fictitious (or notional) tax — i.e. the tax that would have been payable at source had no incentive been granted. This means crediting more than was actually paid, preserving the value of the source-country incentive for the investor."
+  },
+  {
+    "id": "2023_q1",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Transfer Pricing",
+    "question": "When referring to an internal comparable, we are considering:",
+    "options": [
+      "A transaction carried out by one of the entities of a multinational group with third non-related parties which can be taken as a reference to determine market value",
+      "A comparable which has been obtained through a benchmark analysis which only can be used in reference to domestic transactions",
+      "A comparable only known by the tax authorities because of the information they have access to",
+      "A transaction carried out between entities of the same multinational group"
+    ],
+    "answer_letters": [
+      "a"
+    ],
+    "explanation": "An internal comparable (Internal CUP) is a transaction that the tested party itself carries out with independent third parties under comparable conditions. This is distinguished from an external comparable, which is a transaction between two independent third parties found through databases."
+  },
+  {
+    "id": "2023_q2",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Transfer Pricing",
+    "question": "According to OECD Transfer Pricing guidelines, the Cost Plus method will be a valid option to set up transfer prices:",
+    "options": [
+      "Because under the Cost Plus method we deduct from the sale price the margin applied by comparable entities under market conditions",
+      "When goods sold between associated companies are exactly the same that are being sold by third parties under market conditions",
+      "When goods sold between associated companies cannot be easily compared to the ones sold under market conditions, but the activity sector and business held can be considered to be the same or similar",
+      "Only when we deal with financial transactions because it is not applicable in transactions relating to purchase and sale of goods or services"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "Cost Plus is appropriate when products cannot be directly compared to third-party transactions (otherwise CUP would be preferred) but the functional profile of the supplier is comparable to independent parties in the same sector. Option a describes the Resale Minus method. Option b describes a CUP situation."
+  },
+  {
+    "id": "2023_q3",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Methods to Avoid Double Taxation",
+    "question": "The exemption with progression method implies:",
+    "options": [
+      "The taxpayer will be able to deduct at the residence country taxes paid abroad as long as they have been determined through the application of a progressive scale",
+      "The taxpayer will be taxable at the residence country only on income therein obtained but the tax rate will be calculated considering worldwide income",
+      "The taxpayer will be taxable at the residence country on worldwide income",
+      "The taxpayer may choose between being taxed at the residence country at a flat rate or through a progressive scale with lower tax rates"
+    ],
+    "answer_letters": [
+      "b"
+    ],
+    "explanation": "Exemption with progressivity: foreign income is exempt from domestic tax (not included in the taxable base) but is taken into account to determine the tax rate applicable to domestic income. The result is a higher average rate on domestic income compared to pure exemption, preserving the progressive structure."
+  },
+  {
+    "id": "2023_q4",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Double Tax Conventions (DTCs)",
+    "question": "The DTC between France and Spain provides that tax on interest may be levied by the source country at a maximum rate of 10%. Source country domestic law provides for 5% withholding. If the Interest and Royalties Directive applies:",
+    "options": [
+      "Tax to be paid at source will be 10%",
+      "Tax to be paid at source will be 10% but the residence country will grant a tax credit for 5%",
+      "Tax to be paid at source will be 5%",
+      "Tax to be paid at source will be 0%"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "The EU Interest and Royalties Directive eliminates withholding tax on interest and royalty payments between associated companies in different EU Member States. When the Directive applies, the source country cannot levy any withholding tax — the rate is 0%, regardless of what the DTC or domestic law provides."
+  },
+  {
+    "id": "2023_q5",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Double Tax Conventions (DTCs)",
+    "question": "A Mutual Agreement Procedure:",
+    "options": [
+      "Is the analysis to be carried out by multinational groups in order to find a set of comparable entities to assess that the transfer prices applied respect the arm's length principle",
+      "Will not be available in the future given that according to BEPS Action 14 has proven useless in order to solve international tax disputes",
+      "Is a dispute resolution mechanism which allows competent tax authorities to engage into bilateral or multilateral negotiations in order to solve a double taxation issue",
+      "Can only be used within the European Union under the scope of the EU Arbitration Convention"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "The MAP (Article 25 OECD Model) is a dispute resolution mechanism between competent authorities of contracting states to resolve cases of double taxation or incorrect application of the treaty. BEPS Action 14 strengthened, not eliminated, the MAP. It is available globally, not only in the EU."
+  },
+  {
+    "id": "2023_q6",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "BEPS & Anti-Avoidance",
+    "question": "For Covered Tax Agreements, we refer to:",
+    "options": [
+      "Double Tax Conventions which will be updated by the MLI further to the choices and options made by the signatory countries (MLI position)",
+      "Double Tax Conventions which have been approved by the members of the Inclusive Framework as fully adapted to the BEPS recommendations",
+      "Those Tax Conventions which apart from preventing double taxation provide for full coverage regarding indirect taxes",
+      "The only DTCs which after being updated by the MLI will remain into force as those not being covered by the MLI will be automatically terminated"
+    ],
+    "answer_letters": [
+      "a"
+    ],
+    "explanation": "Covered Tax Agreements (CTAs) are the existing bilateral DTCs that signatory countries have identified as subject to modification by the MLI. Each country makes specific choices (reservations and options) about which provisions of the MLI apply to each of their CTAs."
+  },
+  {
+    "id": "2023_q7",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "VAT & Indirect Taxation",
+    "question": "A Spanish company envisages to import electronic devices from China. Is there any advantage in placing goods in a tax free zone when arriving in Spanish territory?",
+    "options": [
+      "The main advantage is that Custom Duties will not be paid even though VAT cannot be avoided",
+      "Tax free zones allow the suspension of VAT payment but not of Custom Duties",
+      "If the goods are stored in a tax free zone, Custom Duties and VAT can be fully avoided on a permanent basis as tax free zones qualify as tax havens",
+      "Tax free zones allow storing goods on a temporary basis with no payment of both Custom Duties and VAT"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "Tax free zones (bonded warehouses) suspend both customs duties and VAT while goods are stored. Both become payable only when goods enter free circulation in the EU. This allows deferral and is useful for goods that may be re-exported without entering the EU market."
+  },
+  {
+    "id": "2023_q8",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "BEPS & Anti-Avoidance",
+    "question": "Under BEPS Action 6 on Prevention of tax treaty abuse:",
+    "options": [
+      "It is considered as a legal and accepted practice to freely choose the best jurisdiction to formally set up a company even though this has no real economic activity in order to benefit from the DTC network of that country",
+      "Members of the BEPS Inclusive Framework commit to include in their Tax Conventions provisions dealing with treaty shopping",
+      "Members of the BEPS Inclusive Framework commit to include in their Tax Conventions anti-fragmentation rules to avoid abuse of the permanent establishment status",
+      "New negotiation rules and techniques are provided to countries in order to achieve better conditions in their respective bilateral Double Tax Conventions"
+    ],
+    "answer_letters": [
+      "b"
+    ],
+    "explanation": "BEPS Action 6 requires Inclusive Framework members to include a minimum standard in their DTCs to prevent treaty shopping — either through the Principal Purpose Test (PPT), a Limitation on Benefits (LOB) clause, or a combination of both. Anti-fragmentation rules are covered by BEPS Action 7 (PE abuse)."
+  },
+  {
+    "id": "2023_q9",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Permanent Establishment (PE)",
+    "question": "A German company hires employees in Italy but has no office there; it uses a logistics operator to stock goods for delivery. Under a DTC, the German company can conclude that:",
+    "options": [
+      "Profits obtained in Italy will be only taxable in Germany because no office will be opened in Italian territory",
+      "Double taxation may arise depending on how the German company's activities in Italy are structured",
+      "Profits obtained in Italy may be taxable in both countries because the German company will be deemed to have a PE in Italy as a consequence of having a stock of goods in that country",
+      "Profits obtained in Italy will be only taxable in Italy in accordance with the rules provided by article 7 of the DTC"
+    ],
+    "answer_letters": [
+      "b"
+    ],
+    "explanation": "The situation is complex: employees working in Italy could create a PE (service PE or dependent agent PE), but the stock of goods for delivery is an explicitly excluded activity under Article 5(4) OECD Model. Whether a PE exists depends on how the activities are structured — hence double taxation may arise depending on the specific facts."
+  },
+  {
+    "id": "2023_q10",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Transfer Pricing",
+    "question": "The Transactional Net Margin Method (TNMM):",
+    "options": [
+      "Has been rejected as a valid valuation method in accordance with the BEPS recommendations",
+      "Is one of the traditional Transaction Methods and as such is of preferential application",
+      "Could be a useful method as one of its strengths is that it may be more tolerant to some functional differences than those methods based on gross profit indicators",
+      "Is one of the Transactional Profit Methods and implies a division of the net profits obtained in a common transaction"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "The TNMM is one of the two Transactional Profit Methods (along with Profit Split). Its key strength is that net profit indicators are less sensitive to functional and product differences than gross margins, making it more widely applicable. Option d describes the Profit Split method."
+  },
+  {
+    "id": "2023_q11",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Transfer Pricing",
+    "question": "A French company in a multinational group earns a 10% gross margin selling to third parties; a comparable French independent retailer earns 25%. The 10% margin:",
+    "options": [
+      "May be adjusted by the tax authorities as long as the two transactions can be considered as comparable",
+      "Will be adjusted by the tax authorities because it is lower than the margin obtained by independent parties",
+      "Cannot be discussed by the tax authorities as companies may freely determine the prices to be applied",
+      "May be adjusted by the tax authorities up to 17.5%, this being the average between 10% and 25%"
+    ],
+    "answer_letters": [
+      "a"
+    ],
+    "explanation": "Comparability is the key condition. If the transactions are sufficiently comparable (same functions, risks, products, contractual conditions), the lower margin may be challenged. If not comparable enough, no adjustment is warranted. There is no automatic adjustment to the midpoint — the result should fall within the arm's length range."
+  },
+  {
+    "id": "2023_q12",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "BEPS & Anti-Avoidance",
+    "question": "The Inclusive Framework:",
+    "options": [
+      "Is the new standard transfer pricing documentation in accordance with BEPS recommendations",
+      "Is a program developed by the European Union in order to smooth the incorporation of new countries",
+      "Is a cooperative project aimed at ensuring an effective implementation of the BEPS measures through the participation of all interested countries including developing economies",
+      "Refers to the analysis to be carried out in order to determine if transactions carried out between related parties have been agreed upon at arm's length"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "The OECD/G20 Inclusive Framework on BEPS is a multilateral body allowing all interested countries (including developing economies) to participate on an equal footing in implementing the BEPS measures and addressing remaining tax challenges including the two-pillar solution."
+  },
+  {
+    "id": "2023_q13",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "BEPS & Anti-Avoidance",
+    "question": "The two-pillar solution:",
+    "options": [
+      "Is aimed at ensuring a fairer distribution of profits and taxing rights among countries aligning taxation with real business activity and value creation as well as a minimum global taxation",
+      "Is the new standard for Transfer Pricing documentation provided by the Inclusive Framework and to be generally implemented through the Multilateral Instrument",
+      "Provides for new rules in order to optimize the functional analysis to be carried out by multinational groups in order to set up their transfer pricing policies",
+      "Refers to the EU VAT action plan which pursues at the same time tackling fraud as well as introducing simplification measures"
+    ],
+    "answer_letters": [
+      "a"
+    ],
+    "explanation": "The two-pillar solution: Pillar 1 reallocates taxing rights over profits of large MNEs to market jurisdictions (fairer distribution); Pillar 2 introduces a 15% global minimum effective tax rate for MNE groups with revenue >€750M (minimum global taxation). Together they address both allocation and tax competition."
+  },
+  {
+    "id": "2023_q14",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Tax Residency & Connecting Factors",
+    "question": "When a Double Tax Convention applies:",
+    "options": [
+      "Conflicts of residency will be solved under Article 4 based upon nationality and visa permits",
+      "Tax residency must be determined in accordance with domestic rules even if those lead to double residency situations which will be solved under the Convention rules",
+      "The definition of tax residency provided by Article 4 will apply disregarding domestic law provisions",
+      "Only conflicts of residency affecting individuals can be solved as according to the 2017 OECD Model there is no possibility to solve a conflict of residency affecting legal entities"
+    ],
+    "answer_letters": [
+      "b"
+    ],
+    "explanation": "Article 4 OECD Model: each country first applies its own domestic rules to determine residency. If both countries claim the person, the tie-breaker rules in the DTC resolve the conflict. Domestic law comes first — the DTC resolves conflicts but does not replace domestic rules. Note: the 2017 OECD Model changed the tie-breaker for companies to a mutual agreement procedure."
+  },
+  {
+    "id": "2023_q15",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "EU Directives",
+    "question": "A Portuguese company receives a dividend from its Belgian subsidiary. The DTC follows OECD Model and EU Parent-Subsidiary Directive conditions are met:",
+    "options": [
+      "According to the EU Parent Subsidiary Directive's provisions the elimination of both legal and economic double taxation is ensured",
+      "Dividends will only be taxable in Portugal so that legal and economic double taxation is avoided",
+      "Dividends will be taxable in both countries but the Portuguese company will be able to deduct the tax paid in Belgium",
+      "Dividends will be taxable in Belgium but not in Portugal according to the EU Parent Subsidiary Directive thus allowing to avoid both legal and economic double taxation"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "The Parent-Subsidiary Directive: (1) eliminates withholding tax in Belgium (source) on dividend distribution — so no SO in Belgium, and (2) requires Portugal to either exempt the dividend or provide a credit for the underlying tax — so no PO double taxation. Result: dividends may be taxable in Belgium at corporate level (underlying tax) but not as a distribution, and not in Portugal — eliminating both legal and economic double taxation."
+  },
+  {
+    "id": "2023_q16",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Double Taxation: Concepts",
+    "question": "We can say that the underlying tax:",
+    "options": [
+      "Refers to the withholding tax paid at the source country on a dividend distribution",
+      "May lead to economic double taxation unless it is neutralized at the parent company's residence country level when dividends are received from subsidiaries",
+      "Is the Corporate Income Tax paid by a company when the lowest marginal rate is applicable",
+      "Is the tax paid by a company in a low tax jurisdiction"
+    ],
+    "answer_letters": [
+      "b"
+    ],
+    "explanation": "The underlying tax is the corporate income tax paid by the subsidiary on its profits before distribution. When those profits are distributed as dividends and taxed again at the parent level, economic double taxation arises. The Parent-Subsidiary Directive and participation exemptions neutralize this effect."
+  },
+  {
+    "id": "2023_q17",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Methods to Avoid Double Taxation",
+    "question": "An individual earns rental income of €1,000 in country A (taxed at 30% there). At residence country B, income of €1,000 with 25% rate. Country B applies the limited tax credit method:",
+    "options": [
+      "Will get at the residence country a full deduction of the taxes paid abroad",
+      "The individual will not be allowed to any tax deduction at the residence country given that the tax rate applicable at the source country is higher than at the residence country",
+      "Total income obtained will be taxable at the residence country and double taxation will not be fully avoided",
+      "At the residence country will only declare income therein obtained and will get a deduction of 5% of the taxes paid abroad (difference between the applicable tax rates)"
+    ],
+    "answer_letters": [
+      "c"
+    ],
+    "explanation": "Limited tax credit: PO on foreign income = €1,000 × 25% = €250. Foreign tax paid = €300. Credit is limited to €250 (the lower amount). SO already paid = €300. Net PO = €250 - €250 = €0. But €300 was paid at source vs €250 that would have been due locally — the extra €50 is unrelieved. Total tax = €300 + €250 (on local income) = €550 vs €500 under full exemption. Double taxation is not fully eliminated."
+  },
+  {
+    "id": "2023_q18",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "VAT & Indirect Taxation",
+    "question": "In general terms, we can say that VAT:",
+    "options": [
+      "Is a direct tax and is levied considering both the Residence and the Source Obligation principle",
+      "Covers national and international transactions as well as custom duties",
+      "Is applied all over Europe but each country has full freedom to set up its own rules thus harmonization not being possible at the level of the European Union",
+      "Is a tax borne by the final consumer and, even though it does not represent a charge for the business, it is fractionally collected in each business transaction"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "VAT is an indirect tax (not direct), borne by the final consumer, collected fractionally at each stage of the supply chain. Businesses charge and deduct VAT — so it is not a net cost for them. VAT is harmonized by EU Directives (not fully free for each country). Custom duties are separate from VAT."
+  },
+  {
+    "id": "2023_q19",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "BEPS & Anti-Avoidance",
+    "question": "The Multilateral Instrument:",
+    "options": [
+      "Is the new model to be taken into account by countries when negotiating bilateral tax conventions",
+      "Is an agreement entered into by the taxpayer with the tax authorities of several countries providing prior clearance about the transfer pricing policy",
+      "Is the instrument providing for the updating of the existing bilateral double tax conventions to incorporate BEPS recommendations and affects any and all tax conventions on a worldwide basis",
+      "Is the instrument providing for the updating of the existing bilateral double tax conventions in order to incorporate BEPS recommendations for those countries being a party and with regard to the tax conventions expressly identified"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "The MLI (BEPS Action 15) modifies existing bilateral DTCs to incorporate BEPS recommendations — but only for countries that have signed the MLI AND only for the specific treaties they have identified as Covered Tax Agreements. It does not apply universally to all tax conventions worldwide. Option b describes an APA."
+  },
+  {
+    "id": "2023_q20",
+    "type": "multiple_choice",
+    "year": 2023,
+    "topic": "Transfer Pricing",
+    "question": "The OECD Guidelines recommend the application of the arm's length principle to transactions carried out by multinational groups:",
+    "options": [
+      "Only when those transactions involve the use of low tax jurisdictions",
+      "Only when there are differences in the tax rates applying in the different countries where the Group's companies are based",
+      "In any case and with reference to any kind of transaction entered into within the Group except for those relating to intangibles as per the BEPS recommendations on Action 8",
+      "In any case and with reference to any kind of transaction entered into within the Group such as goods or services supplies, financial or intangible transactions"
+    ],
+    "answer_letters": [
+      "d"
+    ],
+    "explanation": "The arm's length principle applies to ALL intragroup transactions — goods, services, intangibles, and financial transactions — regardless of whether low-tax jurisdictions are involved or whether there are tax rate differences. BEPS Actions 8-10 actually strengthened the arm's length principle for intangibles, not excluded them."
   }
 ]
