@@ -468,7 +468,7 @@ def _start_session(bank: list, topic: str, mode: str, uid: str = "guest") -> Non
     random.shuffle(qs)
     queue = [q["id"] for q in qs]
     started = utc_now()
-    save_session(topic, mode, queue, 0, {}, started)
+    save_session(uid, topic, mode, queue, 0, {}, started)
     st.session_state.page = "quiz"
     st.rerun()
 
@@ -641,7 +641,7 @@ def render_quiz(bank: list, uid: str = "guest") -> None:
             is_correct = sel_set == correct_letters
             record_attempt(uid, qid, is_correct)
             answers[qid] = {"selected_letters": list(sel_set), "is_correct": is_correct}
-            save_session(session["topic"], session["mode"], queue, idx, answers, session["started_at"])
+            save_session(uid, session["topic"], session["mode"], queue, idx, answers, session["started_at"])
             st.rerun()
 
     # Sidebar controls
