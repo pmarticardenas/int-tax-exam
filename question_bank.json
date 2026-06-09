@@ -2106,7 +2106,7 @@
       "Will generate a tax credit and a tax refund for the entity"
     ],
     "answer_letters": [
-      "a"
+      "b"
     ],
     "explanation": "The reverse charge (self-assessment) mechanism applies when an EU business imports goods from outside the EU or receives certain services from abroad. The buyer self-assesses VAT (charges VAT to itself) and simultaneously claims it as input VAT — net cash flow effect is zero for a fully taxable business, but it does not increase cost."
   },
@@ -2260,7 +2260,7 @@
       "Fictional income arising from self-use of such properties is not included in this income category"
     ],
     "answer_letters": [
-      "b"
+      "a"
     ],
     "explanation": "Article 6(2) OECD Model defines immovable property — the DTC definition prevails for treaty purposes. The DTC definition typically refers to domestic law of the source country for specifics, but the treaty itself provides a framework definition. Capital gains on immovable property are covered by Article 13. Self-use income can be included if domestic law deems it."
   },
@@ -2311,7 +2311,7 @@
       "Income obtained by the PE will be taxed if the PE lasts more than 12 months in country A"
     ],
     "answer_letters": [
-      "a"
+      "b"
     ],
     "explanation": "Once a PE exists in country A, country A taxes the profits attributable to that PE under SO. Only the profits attributable to the PE (Article 7) are taxed — not the entire company's global profits. The PE's taxation in country A is a source-based obligation, regardless of duration (PE duration threshold determines whether the PE exists; once it does, attribution rules apply)."
   },
@@ -2413,7 +2413,7 @@
       "The PO country is granting a subsidy to the taxpayer under the limited tax credit method"
     ],
     "answer_letters": [
-      "a"
+      "c"
     ],
     "explanation": "Full exemption: PO taxes 0 (exempt), SO = 1,000 × 30% = 300. Global = 300. Limited tax credit: PO on 1,000 = 200, credit limited to PO rate (20%) = 200. SO = 300. Net PO = 200 - 200 = 0. Global = 300. So both give 300 total? But wait: under full exemption, PO country exempts → PO = 0. Total = 300 (SO only). Under limited credit: credit capped at 200, PO = 0, SO = 300. Total = 300. Both = 300. But option a says 200... The answer per exam is a, which seems to imply the global tax is 200 — this may assume SO = PO rate which contradicts SO = 30%. The intended exam answer is a."
   },
