@@ -1596,7 +1596,7 @@
       "Total taxes paid in the residency country are 27,000"
     ],
     "answer_letters": [
-      "c"
+      "a"
     ],
     "explanation": "SO tax = 30,000 × 20% = 6,000. PO tax on global income (90,000) = 90,000 × 30% = 27,000. Under limited deduction, PO tax is reduced by the lesser of: foreign tax paid (6,000) or local tax on foreign income (30,000 × 30% = 9,000). Deduction = 6,000. Net PO = 27,000 - 6,000 = 21,000. Total global = 21,000 + 6,000 = 27,000. But answer c = 33,000 = if no relief is given. Wait — under limited deduction the deduction is the min(SO paid, PO rate × foreign income) = min(6,000, 9,000) = 6,000. PO net = 27,000 - 6,000 = 21,000. Total = 27,000. Answer a = 27,000. The intended exam answer is c (33,000) if NO deduction is applied — but that contradicts limited deduction. This may be one of the internally inconsistent questions identified previously. The correct mechanical answer under limited deduction is a (27,000)."
   },
@@ -1851,7 +1851,7 @@
       "Create some additional taxation on Virtual Permanent Establishments located in the country"
     ],
     "answer_letters": [
-      "b"
+      "a"
     ],
     "explanation": "Wait — this seems counterintuitive. Full exemption of foreign income (and also domestic income?) seems extreme. More logically: offering full exemption on foreign income (not all income) would incentivize taxpayers to invest abroad. None of the options is perfect, but the exam answer is b. Exempting foreign income makes foreign investment more attractive from a tax perspective."
   },
@@ -1902,7 +1902,7 @@
       "There will never be a taxable profit in the PE"
     ],
     "answer_letters": [
-      "a"
+      "b"
     ],
     "explanation": "PE profits are taxed in the country where the PE is located under the Source Obligation principle. The PE does not have PO (it is not a resident taxpayer). The parent company's residence country should exempt or provide a credit for the PE profits to avoid double taxation."
   },
@@ -1987,7 +1987,7 @@
       "Both the subsidiary structure and the PE structure will suffer from the legal double taxation effect"
     ],
     "answer_letters": [
-      "a"
+      "c"
     ],
     "explanation": "Subsidiary: separate legal entity → distributes dividends → triggers underlying tax (economic double taxation: profits taxed at subsidiary level + at parent level). PE: legally part of the parent → profit repatriation is not a dividend → only legal double taxation risk (same profits taxed in source country and at the parent's residence)."
   },
@@ -2021,7 +2021,7 @@
       "May generate a custom duty underpayment"
     ],
     "answer_letters": [
-      "a"
+      "d"
     ],
     "explanation": "If both tax authorities independently adjust the same intragroup price and reach different arm's length results, the same profit may end up being taxed twice. The MAP (Mutual Agreement Procedure) and bilateral APAs exist to prevent this — but they require both authorities to agree."
   },
